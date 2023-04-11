@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../mux_trig_8bit.vhd" \
+"../../../../../tb_mux_trig_8bit.vhd" \
+
+# Do not sort compile order
+nosort
