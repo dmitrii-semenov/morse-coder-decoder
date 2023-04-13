@@ -3,11 +3,11 @@ library ieee;
   use ieee.numeric_std.all;
 
 
-entity tb_shifter is
+entity tb_button_driver is
 --  Port ( );
-end tb_shifter;
+end tb_button_driver;
 
-architecture testbench of tb_shifter is
+architecture testbench of tb_button_driver is
 
     constant c_CLK_100MHZ_PERIOD : time := 10 ns;
 
@@ -18,7 +18,7 @@ architecture testbench of tb_shifter is
 
 
 begin
-    uut_shifter: entity work.shifter
+    uut_button_driver: entity work.button_driver
         port map(
             rst       => rst,
             clk       => sig_clk_100mhz,

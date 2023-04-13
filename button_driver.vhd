@@ -3,21 +3,25 @@ library ieee;
   use ieee.numeric_std.all;
 
 
-entity shifter is
+entity button_driver is
     port(
     clk         : in  std_logic;
     rst         : in  std_logic;
     input       : in  std_logic;
-    output      : out  std_logic_vector(20 downto 0)
+    output      : out  std_logic_vector(20 downto 0);
+    LED17_R : out STD_LOGIC;
+    LED17_G : out STD_LOGIC;
+    LED17_B : out STD_LOGIC
     );
-end entity shifter;
+end entity button_driver;
 
-architecture Behavioral of shifter is
+architecture Behavioral of button_driver is
     signal sig_out : std_logic_vector(20 downto 0);
     signal sig_cnt : integer := 0;
     signal zero_cnt : integer := 0;
+    signal one_cnt : integer := 0;
     begin
-        p_shifter : process (clk,input) is
+        p_button_driver : process (clk,input) is
             begin
                 if (rst = '1') then
                     sig_out <= "000000000000000000000";
@@ -95,5 +99,5 @@ architecture Behavioral of shifter is
                         end if;
                     end if;
                 end if;
-            end process p_shifter;
+            end process p_button_driver;
     end architecture Behavioral;
