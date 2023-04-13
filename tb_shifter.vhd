@@ -11,6 +11,7 @@ architecture testbench of tb_shifter is
 
     constant c_CLK_100MHZ_PERIOD : time := 10 ns;
 
+    signal SW                : std_logic;
     signal rst               : std_logic;
     signal sig_clk_100mhz    : std_logic;
     signal input             : std_logic;
@@ -20,6 +21,7 @@ architecture testbench of tb_shifter is
 begin
     uut_shifter: entity work.shifter
         port map(
+            SW        => SW,
             rst       => rst,
             clk       => sig_clk_100mhz,
             input     => input,
@@ -56,6 +58,12 @@ begin
         wait;
       
     end process p_reset_gen;
+
+    p_SW : process is
+        begin
+            SW <= '0';
+            wait;
+        end process p_SW;
 
     p_stimulus : process
     begin
