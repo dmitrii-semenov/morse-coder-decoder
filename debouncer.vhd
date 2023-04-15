@@ -31,9 +31,9 @@ architecture Behavioral of debouncer is
                         one_cnt <= one_cnt + 1;
                         zero_cnt <= 0;
                     end if;
-                    if (one_cnt >= 300000) then
+                    if (one_cnt >= 300000) then -- 300 000
                         output <= '1';
-                    elsif (zero_cnt >= 300000) then
+                    elsif (zero_cnt >= 300000) then -- 300 000
                         output <= '0';
                     end if;
                 end if;

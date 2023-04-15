@@ -83,7 +83,7 @@ begin
             send <= '0';
             wait for 220 ns;
             send <= '1';
-            wait for 10 ns;
+            wait for 50 ns;
             send <= '0';
             wait for 220 ns;
             send <= '1';
@@ -91,7 +91,7 @@ begin
             send <= '0';
             wait for 190 ns;
             send <= '1';
-            wait for 10 ns;
+            wait for 40 ns;
             send <= '0';
             wait for 200 ns;
             send <= '1';
