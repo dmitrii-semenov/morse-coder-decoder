@@ -4,8 +4,8 @@ Topic: Sender and receiver of the Morse code.
 
 ### Team members
 
-* Member 1 (responsible for ...)
-* Member 2 (responsible for ...)
+* Dmitrii Semenov (responsible for ...)
+* Roman Lunin (responsible for ...)
 
 ## Theoretical description and explanation
 
