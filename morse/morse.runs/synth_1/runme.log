@@ -17,94 +17,88 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a50t
 INFO: [Device 21-403] Loading part xc7a50ticsg324-1L
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 8432
+INFO: [Synth 8-7075] Helper process launched with PID 14688
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1000.340 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 999.957 ; gain = 0.000
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'top' [D:/morse/morse/morse.srcs/sources_1/new/top.vhd:46]
-INFO: [Synth 8-638] synthesizing module 'clock_divider' [D:/morse/morse/morse.srcs/sources_1/new/clock_divider.vhd:41]
+INFO: [Synth 8-638] synthesizing module 'top' [D:/morse/morse.srcs/sources_1/new/top.vhd:46]
+INFO: [Synth 8-638] synthesizing module 'clock_divider' [D:/morse/morse.srcs/sources_1/new/clock_divider.vhd:41]
 	Parameter g_LENGTH bound to: 500 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'clock_divider' (1#1) [D:/morse/morse/morse.srcs/sources_1/new/clock_divider.vhd:41]
-INFO: [Synth 8-638] synthesizing module 'debouncer' [D:/morse/morse/morse.srcs/sources_1/new/debouncer.vhd:15]
-WARNING: [Synth 8-614] signal 'rst' is read in the process but is not in the sensitivity list [D:/morse/morse/morse.srcs/sources_1/new/debouncer.vhd:19]
-INFO: [Synth 8-256] done synthesizing module 'debouncer' (2#1) [D:/morse/morse/morse.srcs/sources_1/new/debouncer.vhd:15]
-INFO: [Synth 8-638] synthesizing module 'shifter' [D:/morse/morse/morse.srcs/sources_1/new/shifter.vhd:16]
-WARNING: [Synth 8-614] signal 'SW' is read in the process but is not in the sensitivity list [D:/morse/morse/morse.srcs/sources_1/new/shifter.vhd:21]
-WARNING: [Synth 8-614] signal 'rst' is read in the process but is not in the sensitivity list [D:/morse/morse/morse.srcs/sources_1/new/shifter.vhd:21]
-INFO: [Synth 8-256] done synthesizing module 'shifter' (3#1) [D:/morse/morse/morse.srcs/sources_1/new/shifter.vhd:16]
-INFO: [Synth 8-638] synthesizing module 'button_driver' [D:/morse/morse/morse.srcs/sources_1/new/button_driver.vhd:20]
-WARNING: [Synth 8-614] signal 'SW' is read in the process but is not in the sensitivity list [D:/morse/morse/morse.srcs/sources_1/new/button_driver.vhd:25]
-WARNING: [Synth 8-614] signal 'rst' is read in the process but is not in the sensitivity list [D:/morse/morse/morse.srcs/sources_1/new/button_driver.vhd:25]
-INFO: [Synth 8-256] done synthesizing module 'button_driver' (4#1) [D:/morse/morse/morse.srcs/sources_1/new/button_driver.vhd:20]
-INFO: [Synth 8-638] synthesizing module 'mux_21bit_2to1' [D:/morse/morse/morse.srcs/sources_1/new/mux_21bit_2to1.vhd:43]
-INFO: [Synth 8-256] done synthesizing module 'mux_21bit_2to1' (5#1) [D:/morse/morse/morse.srcs/sources_1/new/mux_21bit_2to1.vhd:43]
-INFO: [Synth 8-638] synthesizing module 'mux_driver' [D:/morse/morse/morse.srcs/sources_1/new/mux_driver.vhd:22]
-WARNING: [Synth 8-614] signal 'rst' is read in the process but is not in the sensitivity list [D:/morse/morse/morse.srcs/sources_1/new/mux_driver.vhd:33]
-INFO: [Synth 8-256] done synthesizing module 'mux_driver' (6#1) [D:/morse/morse/morse.srcs/sources_1/new/mux_driver.vhd:22]
-INFO: [Synth 8-638] synthesizing module 'driver_7seg_8digits' [D:/morse/morse/morse.srcs/sources_1/new/driver_7seg_8digits.vhd:42]
-INFO: [Synth 8-638] synthesizing module 'clock_enable' [D:/morse/morse/morse.srcs/sources_1/new/clock_enable.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'clock_divider' (1#1) [D:/morse/morse.srcs/sources_1/new/clock_divider.vhd:41]
+INFO: [Synth 8-638] synthesizing module 'debouncer' [D:/morse/morse.srcs/sources_1/new/debouncer.vhd:15]
+WARNING: [Synth 8-614] signal 'rst' is read in the process but is not in the sensitivity list [D:/morse/morse.srcs/sources_1/new/debouncer.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'debouncer' (2#1) [D:/morse/morse.srcs/sources_1/new/debouncer.vhd:15]
+INFO: [Synth 8-638] synthesizing module 'shifter' [D:/morse/morse.srcs/sources_1/new/shifter.vhd:16]
+WARNING: [Synth 8-614] signal 'SW' is read in the process but is not in the sensitivity list [D:/morse/morse.srcs/sources_1/new/shifter.vhd:21]
+WARNING: [Synth 8-614] signal 'rst' is read in the process but is not in the sensitivity list [D:/morse/morse.srcs/sources_1/new/shifter.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'shifter' (3#1) [D:/morse/morse.srcs/sources_1/new/shifter.vhd:16]
+INFO: [Synth 8-638] synthesizing module 'button_driver' [D:/morse/morse.srcs/sources_1/new/button_driver.vhd:20]
+WARNING: [Synth 8-614] signal 'SW' is read in the process but is not in the sensitivity list [D:/morse/morse.srcs/sources_1/new/button_driver.vhd:25]
+WARNING: [Synth 8-614] signal 'rst' is read in the process but is not in the sensitivity list [D:/morse/morse.srcs/sources_1/new/button_driver.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'button_driver' (4#1) [D:/morse/morse.srcs/sources_1/new/button_driver.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'mux_21bit_2to1' [D:/morse/morse.srcs/sources_1/new/mux_21bit_2to1.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'mux_21bit_2to1' (5#1) [D:/morse/morse.srcs/sources_1/new/mux_21bit_2to1.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'mux_driver' [D:/morse/morse.srcs/sources_1/new/mux_driver.vhd:22]
+WARNING: [Synth 8-614] signal 'rst' is read in the process but is not in the sensitivity list [D:/morse/morse.srcs/sources_1/new/mux_driver.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'mux_driver' (6#1) [D:/morse/morse.srcs/sources_1/new/mux_driver.vhd:22]
+INFO: [Synth 8-638] synthesizing module 'driver_7seg_8digits' [D:/morse/morse.srcs/sources_1/new/driver_7seg_8digits.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'clock_enable' [D:/morse/morse.srcs/sources_1/new/clock_enable.vhd:26]
 	Parameter g_MAX bound to: 200000 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'clock_enable' (7#1) [D:/morse/morse/morse.srcs/sources_1/new/clock_enable.vhd:26]
-INFO: [Synth 8-638] synthesizing module 'cnt_up_down' [D:/morse/morse/morse.srcs/sources_1/new/cnt_up_down.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'clock_enable' (7#1) [D:/morse/morse.srcs/sources_1/new/clock_enable.vhd:26]
+INFO: [Synth 8-638] synthesizing module 'cnt_up_down' [D:/morse/morse.srcs/sources_1/new/cnt_up_down.vhd:27]
 	Parameter g_CNT_WIDTH bound to: 3 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'cnt_up_down' (8#1) [D:/morse/morse/morse.srcs/sources_1/new/cnt_up_down.vhd:27]
-INFO: [Synth 8-638] synthesizing module 'hex_7seg' [D:/morse/morse/morse.srcs/sources_1/new/seg_driver_hex.vhd:40]
-INFO: [Synth 8-256] done synthesizing module 'hex_7seg' (9#1) [D:/morse/morse/morse.srcs/sources_1/new/seg_driver_hex.vhd:40]
-INFO: [Synth 8-256] done synthesizing module 'driver_7seg_8digits' (10#1) [D:/morse/morse/morse.srcs/sources_1/new/driver_7seg_8digits.vhd:42]
-INFO: [Synth 8-638] synthesizing module 'signal_sender' [D:/morse/morse/morse.srcs/sources_1/new/signal_sender.vhd:26]
-WARNING: [Synth 8-614] signal 'rst' is read in the process but is not in the sensitivity list [D:/morse/morse/morse.srcs/sources_1/new/signal_sender.vhd:32]
-INFO: [Synth 8-256] done synthesizing module 'signal_sender' (11#1) [D:/morse/morse/morse.srcs/sources_1/new/signal_sender.vhd:26]
-INFO: [Synth 8-256] done synthesizing module 'top' (12#1) [D:/morse/morse/morse.srcs/sources_1/new/top.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'cnt_up_down' (8#1) [D:/morse/morse.srcs/sources_1/new/cnt_up_down.vhd:27]
+INFO: [Synth 8-638] synthesizing module 'hex_7seg' [D:/morse/morse.srcs/sources_1/new/seg_driver_hex.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'hex_7seg' (9#1) [D:/morse/morse.srcs/sources_1/new/seg_driver_hex.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'driver_7seg_8digits' (10#1) [D:/morse/morse.srcs/sources_1/new/driver_7seg_8digits.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'signal_sender' [D:/morse/morse.srcs/sources_1/new/signal_sender.vhd:26]
+WARNING: [Synth 8-614] signal 'rst' is read in the process but is not in the sensitivity list [D:/morse/morse.srcs/sources_1/new/signal_sender.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'signal_sender' (11#1) [D:/morse/morse.srcs/sources_1/new/signal_sender.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'top' (12#1) [D:/morse/morse.srcs/sources_1/new/top.vhd:46]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1000.340 ; gain = 0.000
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 999.957 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1000.340 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 999.957 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1000.340 ; gain = 0.000
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 999.957 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1000.340 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 999.957 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [D:/morse/morse/morse.srcs/constrs_1/new/nexys-a7-50t.xdc]
-CRITICAL WARNING: [Common 17-1548] Command failed: extra characters after close-brace
- [D:/morse/morse/morse.srcs/constrs_1/new/nexys-a7-50t.xdc:1]
-CRITICAL WARNING: [Designutils 20-970] Unrecognized or unsupported command '{\rtf1\ansi\ansicpg1251\cocoartf2709
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fmodern\fcharset0 Courier;}
-{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
-{\*\expandedcolortbl;;\cssrgb\c0 ... (truncated) ' found in constraint file. [D:/morse/morse/morse.srcs/constrs_1/new/nexys-a7-50t.xdc:1]
-Finished Parsing XDC File [D:/morse/morse/morse.srcs/constrs_1/new/nexys-a7-50t.xdc]
+Parsing XDC File [D:/morse/morse.srcs/constrs_1/new/nexys-a7-50t.xdc]
+Finished Parsing XDC File [D:/morse/morse.srcs/constrs_1/new/nexys-a7-50t.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1006.773 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1035.066 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1006.773 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1035.066 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 1006.773 ; gain = 6.434
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1035.066 ; gain = 35.109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a50ticsg324-1L
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 1006.773 ; gain = 6.434
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1035.066 ; gain = 35.109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 1006.773 ; gain = 6.434
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1035.066 ; gain = 35.109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 1006.773 ; gain = 6.434
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 1035.066 ; gain = 35.109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -164,25 +158,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:23 . Memory (MB): peak = 1006.773 ; gain = 6.434
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 1035.066 ; gain = 35.109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:29 . Memory (MB): peak = 1006.773 ; gain = 6.434
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:28 . Memory (MB): peak = 1035.066 ; gain = 35.109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:29 . Memory (MB): peak = 1006.773 ; gain = 6.434
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 1035.066 ; gain = 35.109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:29 . Memory (MB): peak = 1008.914 ; gain = 8.574
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 1035.066 ; gain = 35.109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -200,37 +194,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:33 . Memory (MB): peak = 1023.719 ; gain = 23.379
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 1035.066 ; gain = 35.109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:33 . Memory (MB): peak = 1023.719 ; gain = 23.379
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 1035.066 ; gain = 35.109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:33 . Memory (MB): peak = 1023.719 ; gain = 23.379
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 1035.066 ; gain = 35.109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:33 . Memory (MB): peak = 1023.719 ; gain = 23.379
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 1035.066 ; gain = 35.109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:33 . Memory (MB): peak = 1023.719 ; gain = 23.379
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 1035.066 ; gain = 35.109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:33 . Memory (MB): peak = 1023.719 ; gain = 23.379
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 1035.066 ; gain = 35.109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -264,26 +258,25 @@ Report Cell Usage:
 |16    |OBUF   |    22|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:33 . Memory (MB): peak = 1023.719 ; gain = 23.379
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 1035.066 ; gain = 35.109
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:31 . Memory (MB): peak = 1023.719 ; gain = 16.945
-Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:33 . Memory (MB): peak = 1023.719 ; gain = 23.379
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:31 . Memory (MB): peak = 1035.066 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 1035.066 ; gain = 35.109
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1035.773 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1035.066 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 101 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1035.773 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1035.992 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-38 Infos, 7 Warnings, 2 Critical Warnings and 0 Errors encountered.
+38 Infos, 7 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:46 . Memory (MB): peak = 1035.773 ; gain = 35.434
-INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
-INFO: [Common 17-1381] The checkpoint 'D:/morse/morse/morse.runs/synth_1/top.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:40 . Memory (MB): peak = 1035.992 ; gain = 36.035
+INFO: [Common 17-1381] The checkpoint 'D:/morse/morse.runs/synth_1/top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Apr 15 23:30:21 2023...
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 16 18:45:07 2023...

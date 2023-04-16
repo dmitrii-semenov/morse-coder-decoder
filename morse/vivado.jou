@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Apr 16 18:10:23 2023
+# Process ID: 7916
+# Current directory: D:/morse
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9648 D:\morse\morse.xpr
+# Log file: D:/morse/vivado.log
+# Journal file: D:/morse\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/morse/morse.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
