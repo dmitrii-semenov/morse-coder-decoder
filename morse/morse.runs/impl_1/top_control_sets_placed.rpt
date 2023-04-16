@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Sun Apr 16 18:06:55 2023
+| Date         : Sun Apr 16 18:45:46 2023
 | Host         : LAPTOP-6BHBSTG2 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
 | Design       : top
@@ -82,12 +82,12 @@ Table of Contents
 |  clk_ce_BUFG         | sender/E[0]                  | sender/data_cnt[3]_i_3_n_0             |                2 |              5 |         2.50 |
 |  CLK100MHZ_IBUF_BUFG |                              |                                        |               16 |             21 |         1.31 |
 |  CLK100MHZ_IBUF_BUFG | mux_driv/sig_control0        |                                        |                3 |             21 |         7.00 |
+|  clk_ce_BUFG         | butt_driver/sig_out0         | butt_driver/sig_out[20]_i_3_n_0        |                7 |             21 |         3.00 |
 |  clk_ce_BUFG         | BTNL_IBUF                    | butt_driver/sig_out[20]_i_3_n_0        |                5 |             21 |         4.20 |
 |  clk_ce_BUFG         | shift/output[20]_i_1_n_0     | shift/sig_cnt[31]_i_3_n_0              |                4 |             21 |         5.25 |
-|  clk_ce_BUFG         | butt_driver/sig_out0         | butt_driver/sig_out[20]_i_3_n_0        |                7 |             21 |         3.00 |
 |  CLK100MHZ_IBUF_BUFG |                              | seg_driv/clk_en0/sig_cnt[0]_i_1__1_n_0 |                8 |             31 |         3.88 |
-|  clk_ce_BUFG         |                              | shift/sig_cnt[31]_i_3_n_0              |                8 |             32 |         4.00 |
 |  clk_ce_BUFG         |                              | butt_driver/sig_out[20]_i_3_n_0        |                8 |             32 |         4.00 |
+|  clk_ce_BUFG         |                              | shift/sig_cnt[31]_i_3_n_0              |                8 |             32 |         4.00 |
 |  clk_ce_BUFG         | deb/zero_cnt0                | deb/clear                              |                8 |             32 |         4.00 |
 |  clk_ce_BUFG         | shift/sig_cnt0               | shift/sig_cnt[31]_i_3_n_0              |               12 |             53 |         4.42 |
 |  CLK100MHZ_IBUF_BUFG |                              | BTNC_IBUF                              |               30 |            109 |         3.63 |
