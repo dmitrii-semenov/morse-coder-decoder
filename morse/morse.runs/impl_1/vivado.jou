@@ -2,11 +2,11 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Sun Apr 16 18:45:16 2023
-# Process ID: 10920
-# Current directory: D:/morse/morse.runs/impl_1
+# Start of session at: Tue Apr 18 20:45:50 2023
+# Process ID: 17056
+# Current directory: D:/DE-project/morse-coder-decoder/morse/morse.runs/impl_1
 # Command line: vivado.exe -log top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top.tcl -notrace
-# Log file: D:/morse/morse.runs/impl_1/top.vdi
-# Journal file: D:/morse/morse.runs/impl_1\vivado.jou
+# Log file: D:/DE-project/morse-coder-decoder/morse/morse.runs/impl_1/top.vdi
+# Journal file: D:/DE-project/morse-coder-decoder/morse/morse.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
 source top.tcl -notrace
