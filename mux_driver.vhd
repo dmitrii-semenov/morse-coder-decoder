@@ -32,41 +32,41 @@ architecture Behavioral of mux_driver is
     begin
         p_mux_driver : process (clk,input) is
             begin
-                if (rst = '1') then
-                    output1 <= "000000000000000000000";
-                    output2 <= "000000000000000000000";
-                    output3 <= "000000000000000000000";
-                    output4 <= "000000000000000000000";
-                    output5 <= "000000000000000000000";
-                    output6 <= "000000000000000000000";
-                    output7 <= "000000000000000000000";
-                    output8 <= "000000000000000000000";
-                    sig_1   <= "000000000000000000000";
-                    sig_2   <= "000000000000000000000";
-                    sig_3   <= "000000000000000000000";
-                    sig_4   <= "000000000000000000000";
-                    sig_5   <= "000000000000000000000";
-                    sig_6   <= "000000000000000000000";
-                    sig_7   <= "000000000000000000000";
-                elsif rising_edge(clk) then
-                    if input /= sig_control then
-                        sig_8 <= sig_7;
-                        sig_7 <= sig_6;
-                        sig_6 <= sig_5;
-                        sig_5 <= sig_4;
-                        sig_4 <= sig_3;
-                        sig_3 <= sig_2;
-                        sig_2 <= sig_1;
-                        sig_1 <= input;
-                        output1 <= input;
-                        output2 <= sig_1;
-                        output3 <= sig_2;
-                        output4 <= sig_3;
-                        output5 <= sig_4;
-                        output6 <= sig_5;
-                        output7 <= sig_6;
-                        output8 <= sig_7;
-                        sig_control <= input;
+                if rising_edge(clk) then
+                    if (rst = '1') then
+                        output1 <= "000000000000000000000";
+                        output2 <= "000000000000000000000";
+                        output3 <= "000000000000000000000";
+                        output4 <= "000000000000000000000";
+                        output5 <= "000000000000000000000";
+                        output6 <= "000000000000000000000";
+                        output7 <= "000000000000000000000";
+                        output8 <= "000000000000000000000";
+                        sig_1   <= "000000000000000000000";
+                        sig_2   <= "000000000000000000000";
+                        sig_3   <= "000000000000000000000";
+                        sig_4   <= "000000000000000000000";
+                        sig_5   <= "000000000000000000000";
+                        sig_6   <= "000000000000000000000";
+                        sig_7   <= "000000000000000000000";
+                    elsif input /= sig_control then
+                            sig_8 <= sig_7;
+                            sig_7 <= sig_6;
+                            sig_6 <= sig_5;
+                            sig_5 <= sig_4;
+                            sig_4 <= sig_3;
+                            sig_3 <= sig_2;
+                            sig_2 <= sig_1;
+                            sig_1 <= input;
+                            output1 <= input;
+                            output2 <= sig_1;
+                            output3 <= sig_2;
+                            output4 <= sig_3;
+                            output5 <= sig_4;
+                            output6 <= sig_5;
+                            output7 <= sig_6;
+                            output8 <= sig_7;
+                            sig_control <= input;
                     end if;
                 end if;
             end process p_mux_driver;
