@@ -33,4 +33,5 @@ Write an instruction manual for your application, including photos or a link to 
 ## References
 
 1. [Reference manual](https://reference.digilentinc.com/reference/programmable-logic/nexys-a7/reference-manual) of the Nexys A7 board
-2. 
+2. [Morse code](https://en.wikipedia.org/wiki/File:International_Morse_Code.svg) for letters encryption
+3. [General information](https://en.wikipedia.org/wiki/Morse_code) about Morse code
