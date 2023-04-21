@@ -4,8 +4,8 @@ Topic: Sender and receiver of the Morse code.
 
 ### Team members
 
-* Dmitrii Semenov (responsible for top level simulation, VHDL programing)
-* Roman Lunin (responsible for VHDL programing, github decoration)
+* Dmitrii Semenov (responsible for top level simulation, debugging, VHDL programing)
+* Roman Lunin (responsible for VHDL programing, github design)
 
 ## Theoretical description and explanation
 
