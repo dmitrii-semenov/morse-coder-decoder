@@ -1,4 +1,4 @@
-----------------------------------------------------------
+ ----------------------------------------------------------
 --
 --! @title Clock enable
 --! @author Tomas Fryza
@@ -25,7 +25,7 @@ library ieee;
 
 entity clock_divider is
   generic (
-    g_LENGTH : natural := 1 --! Length of a point in ms.
+    g_length : natural := 10 --! Length of a point in us. (500 000)
   );                       -- Note that there IS a semicolon between generic and port sections
   port (
     clk : in    std_logic; --! Main clock
@@ -51,17 +51,17 @@ begin
   -- is low and generated pulse is always one clock long.
   --------------------------------------------------------
   p_clk_divider : process (clk) is
-  begin 
+  begin
 
-    if rising_edge(clk) then              -- Synchronous process
-      if (rst = '1') then                 -- High-active reset
-        sig_cnt <= 0;                     -- Clear local counter
-        ce      <= '0';                   -- Set output to low
+    if rising_edge(clk) then                      -- Synchronous process
+      if (rst = '1') then                         -- High-active reset
+        sig_cnt <= 0;                             -- Clear local counter
+        ce      <= '0';                           -- Set output to low
 
       -- Test number of clock periods
-      elsif (sig_cnt = (g_LENGTH*100000 - 1)) then
-        sig_cnt <= 0;                     -- Clear local counter
-        ce      <= '1';                   -- Generate clock enable pulse
+      elsif (sig_cnt = (g_length * 100 - 1)) then
+        sig_cnt <= 0;                             -- Clear local counter
+        ce      <= '1';                           -- Generate clock enable pulse
       else
         sig_cnt <= sig_cnt + 1;
         ce      <= '0';

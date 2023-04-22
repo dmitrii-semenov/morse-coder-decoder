@@ -1,5 +1,6 @@
 
 ----------------------------------------------------------
+
 library ieee;
   use ieee.std_logic_1164.all;
   use ieee.numeric_std.all; -- Package for arithmetic operations
@@ -10,7 +11,7 @@ library ieee;
 
 entity clock_enable is
   generic (
-    g_MAX : natural := 200000 --! Number of clk pulses to generate one enable signal period
+    g_max : natural := 200000 --! Number of clk pulses to generate one enable signal period
   );                       -- Note that there IS a semicolon between generic and port sections
   port (
     clk : in    std_logic; --! Main clock
@@ -44,7 +45,7 @@ begin
         ce      <= '0';                   -- Set output to low
 
       -- Test number of clock periods
-      elsif (sig_cnt >= (g_MAX - 1)) then
+      elsif (sig_cnt >= (g_max - 1)) then
         sig_cnt <= 0;                     -- Clear local counter
         ce      <= '1';                   -- Generate clock enable pulse
       else
