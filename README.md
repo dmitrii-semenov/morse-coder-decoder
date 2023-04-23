@@ -11,6 +11,8 @@ Topic: Sender and receiver of the Morse code.
 
 Enter a description of the problem and how to solve it.
 
+Our task was to create a valid Morse code receiver and sender. At the beginning of the development of our project, we had several ideas for implementing a solution to our problem. The first idea for the receiver was to have the user specify combinations of dots and dashes using switches, for which we would require 10 switches (since the maximum combination length is 5 dashes). But we decided to refuse this idea and solve the issue in a different way. Our second idea was for the user to enter combinations using the buttons located on our `nexys-a7-50t` board. A dot would be a short press on the button (short press could be controlled by RGB LEDs, meaning the user would know when to release the button for only the dot to count), a long press would mean a dash. And in this way, the user could enter the desired combination and display a letter or number on a 7-segment display, and in case of an error, easily reset everything using the reset button. Also for the Morse code sender, we decided to use buttons where the user types the necessary symbols in the same way and sends using the "send" button. This idea seemed to us much more interesting and better for the implementation of our project.
+
 ## Hardware description of demo application
 
 Insert descriptive text and schematic(s) of your implementation.
