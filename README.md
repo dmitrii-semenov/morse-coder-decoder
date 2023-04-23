@@ -27,10 +27,10 @@ Insert descriptive text and schematic(s) of your implementation.
 
 Put flowchats/state diagrams of your algorithm(s) and direct links to source/testbench files in `src` and `sim` folders. 
 
-Link to source files:
+Link to source files (`src` folder):
 [https://github.com/dmitrii-semenov/morse-coder-decoder/tree/main/sim](https://github.com/dmitrii-semenov/morse-coder-decoder/tree/main/sim)
 
-Link to testbench files:
+Link to testbench files (`sim` folder):
 [https://github.com/dmitrii-semenov/morse-coder-decoder/tree/main/src](https://github.com/dmitrii-semenov/morse-coder-decoder/tree/main/src)
 ## Components simulation
 
