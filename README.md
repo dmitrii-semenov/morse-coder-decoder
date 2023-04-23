@@ -44,21 +44,21 @@ Write an instruction manual for your application, including photos or a link to 
 
 Instructions for using the morse code receiver:
 
-    1. Bring `SW0` to active position (up);
+1. Bring `SW0` to active position (up);
 
-    2. Make sure that the green LED is on, this means that everything is in working mode;
+2. Make sure that the green LED is on, this means that everything is in working mode;
 
-    3. To enter a point, short press the bottom button `BTND` (the red diode should be lit):
+3. To enter a point, short press the bottom button `BTND` (the red diode should be lit):
 
-    4. To enter a dash, long press the bottom button `BTND` (the blue diode should be lit);
+4. To enter a dash, long press the bottom button `BTND` (the blue diode should be lit);
 
-    5. Press the left button `BTNL` to process and display your combination on the display (the letter or number you specified should appear);
+5. Press the left button `BTNL` to process and display your combination on the display (the letter or number you specified should appear);
 
-    6. If you want to continue entering symbols without deleting the previous combination, then repeat steps 2-5;
+6. If you want to continue entering symbols without deleting the previous combination, then repeat steps 2-5;
 
-    7. If you want to reset all symbols (so that the display becomes blank), then press the button in the middle `BTNC` (reset);
-    
-    8. To enter new combinations, repeat steps 2-5.
+7. If you want to reset all symbols (so that the display becomes blank), then press the button in the middle `BTNC` (reset);
+
+8. To enter new combinations, repeat steps 2-5.
 
 ## References
 
