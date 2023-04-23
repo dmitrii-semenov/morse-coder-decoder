@@ -11,7 +11,7 @@ Topic: Sender and receiver of the Morse code.
 
 Enter a description of the problem and how to solve it.
 
-(https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/top.jpg)!
+![https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/top.jpg](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/top.jpg)
 
 ## Hardware description of demo application
 
