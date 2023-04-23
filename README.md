@@ -11,8 +11,11 @@ Topic: Sender and receiver of the Morse code.
 
 Enter a description of the problem and how to solve it.
 
+Block diagram for `top`:
+
 ![https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/top.jpg](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/top.jpg)
 
+Block diagram for `driver_7seg_8dig`:
 
 ![https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/driver_7seg_8dig.jpg](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/driver_7seg_8dig.jpg)
 
