@@ -22,7 +22,7 @@ Put flowchats/state diagrams of your algorithm(s) and direct links to source/tes
 Link to source files:
 [https://github.com/dmitrii-semenov/morse-coder-decoder/tree/main/sim](https://github.com/dmitrii-semenov/morse-coder-decoder/tree/main/sim)
 
-Links to testbench files:
+Link to testbench files:
 [https://github.com/dmitrii-semenov/morse-coder-decoder/tree/main/src](https://github.com/dmitrii-semenov/morse-coder-decoder/tree/main/src)
 ## Components simulation
 
