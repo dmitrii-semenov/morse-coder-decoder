@@ -42,7 +42,7 @@ The first part of our project is the button driver. It is a block that automatic
 
 Write an instruction manual for your application, including photos or a link to a video.
 
-Instructions for using the morse code receiver:
+**Instructions for using the morse code receiver:**
 
 1. Bring `SW0` to active position (up);
 
