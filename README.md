@@ -13,6 +13,9 @@ Enter a description of the problem and how to solve it.
 
 ![https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/top.jpg](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/top.jpg)
 
+
+![https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/driver_7seg_8dig.jpg](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/driver_7seg_8dig.jpg)
+
 ## Hardware description of demo application
 
 Insert descriptive text and schematic(s) of your implementation.
