@@ -34,9 +34,10 @@ The first part of our project is the button driver. It is a block that automatic
 
 Put flowchats/state diagrams of your algorithm(s) and direct links to source/testbench files in `src` and `sim` folders. 
 
-Button driver [sourse file](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/src/button_driver.vhd)
+Button driver:
+*[sourse file](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/src/button_driver.vhd)
 
-Button driver [testbench file](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/sim/button_driver.vcd)
+*[testbench file](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/sim/button_driver.vcd)
 
 ## Components simulation
 
