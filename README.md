@@ -38,7 +38,13 @@ Button driver:
 
 * [sourse file](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/src/button_driver.vhd)
 
-* [testbench file](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/sim/button_driver.vcd)
+* [testbench file](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/tb/tb_button_driver.vhd)
+
+Clock divider:
+
+* [sourse file](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/src/clock_divider.vhd)
+
+* [testbench file](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/tb/tb_clock_divider.vhd)
 
 ## Components simulation
 
