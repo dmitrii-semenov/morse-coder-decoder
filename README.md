@@ -23,7 +23,7 @@ Block diagram for `top`:
 
 Block diagram for `driver_7seg_8dig`:
 
-![]()
+![https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/driver_7seg_8dig.jpg](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/driver_7seg_8dig.jpg)
 
 ### Explanation of the function of all important blocks of the project:
 
