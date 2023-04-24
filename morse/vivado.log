@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Apr 18 20:43:19 2023
+# Process ID: 8720
+# Current directory: D:/DE-project/morse-coder-decoder/morse
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16692 D:\DE-project\morse-coder-decoder\morse\morse.xpr
+# Log file: D:/DE-project/morse-coder-decoder/morse/vivado.log
+# Journal file: D:/DE-project/morse-coder-decoder/morse\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/DE-project/morse-coder-decoder/morse/morse.xpr
+INFO: [Project 1-313] Project file moved from 'D:/morse' since last save.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'D:/DE-project/morse-coder-decoder/morse/morse.gen/sources_1', nor could it be found using path 'D:/morse/morse.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/DE-1/VIVADO/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Apr 18 20:44:55 2023] Launched synth_1...
+Run output will be captured here: D:/DE-project/morse-coder-decoder/morse/morse.runs/synth_1/runme.log
+[Tue Apr 18 20:44:55 2023] Launched impl_1...
+Run output will be captured here: D:/DE-project/morse-coder-decoder/morse/morse.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 18 20:52:54 2023...
