@@ -34,11 +34,7 @@ The first part of our project is the button driver. It is a block that automatic
 
 Put flowchats/state diagrams of your algorithm(s) and direct links to source/testbench files in `src` and `sim` folders. 
 
-Link to source files:
-[https://github.com/dmitrii-semenov/morse-coder-decoder/tree/main/sim](https://github.com/dmitrii-semenov/morse-coder-decoder/tree/main/sim)
 
-Link to testbench files:
-[https://github.com/dmitrii-semenov/morse-coder-decoder/tree/main/src](https://github.com/dmitrii-semenov/morse-coder-decoder/tree/main/src)
 ## Components simulation
 
      ~SIMULATION~
@@ -49,6 +45,8 @@ Write an instruction manual for your application, including photos or a link to 
 
 **Instructions for using the morse code receiver:**
 
+
+**Instructions for using the morse code sender:**
 1. Bring `SW0` to active position (up);
 
 2. Make sure that the green LED is on, this means that everything is in working mode;
@@ -64,8 +62,6 @@ Write an instruction manual for your application, including photos or a link to 
 7. If you want to reset all symbols (so that the display becomes blank), then press the button in the middle `BTNC` (reset);
 
 8. To enter new combinations, repeat steps 2-5.
-
-**Instructions for using the morse code sender:**
 
 ## References
 
