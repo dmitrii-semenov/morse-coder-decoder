@@ -112,7 +112,7 @@ Write an instruction manual for your application, including photos or a link to 
 
 
 **Instructions for using the morse code sender:**
-1. Bring `SW0` to active position (up);
+1. Activate switch 0 `SW0` (up);
 
 2. Make sure that the green LED is on, this means that everything is in working mode;
 
@@ -127,6 +127,8 @@ Write an instruction manual for your application, including photos or a link to 
 7. If you want to reset all symbols (so that the display becomes blank), then press the button in the middle `BTNC` (reset);
 
 8. To enter new combinations, repeat steps 2-5.
+
+9. Activate switch 1 `SW1` to send your message (at the beginning the red diode will light up, which indicates the sending process, after the green diode will light up, this means your message has been sent)
 
 ## References
 
