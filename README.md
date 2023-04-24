@@ -33,6 +33,7 @@ The first part of our project is the button driver. It is a block that automatic
 ## Software description
 
 Put flowchats/state diagrams of your algorithm(s) and direct links to source/testbench files in `src` and `sim` folders. 
+
 [Button driver](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/src/button_driver.vhd) sourse file
 
 [Button driver](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/sim/button_driver.vcd) testbench file
