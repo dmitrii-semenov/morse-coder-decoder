@@ -46,6 +46,12 @@ Clock divider:
 
 * [testbench file](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/tb/tb_clock_divider.vhd)
 
+Debouncer:
+
+* [sourse file](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/src/debouncer.vhd)
+
+* [testbench file](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/tb/tb_debouncer.vhd)
+
 ## Components simulation
 
      ~SIMULATION~
