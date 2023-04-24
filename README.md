@@ -34,23 +34,71 @@ The first part of our project is the button driver. It is a block that automatic
 
 Put flowchats/state diagrams of your algorithm(s) and direct links to source/testbench files in `src` and `sim` folders. 
 
-#### Button driver:
+**button_driver:**
 
 * [sourse file](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/src/button_driver.vhd)
 
 * [testbench file](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/tb/tb_button_driver.vhd)
 
-**Clock divider:**
+**clock_divider:**
 
 * [sourse file](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/src/clock_divider.vhd)
 
 * [testbench file](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/tb/tb_clock_divider.vhd)
 
-**Debouncer:**
+**debouncer:**
 
 * [sourse file](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/src/debouncer.vhd)
 
 * [testbench file](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/tb/tb_debouncer.vhd)
+
+**shifter:**
+
+* [sourse file](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/src/shifter.vhd)
+
+* [testbench file](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/tb/tb_shifter.vhd)
+
+
+**mux_21bit_2to1:**
+
+* [sourse file](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/src/mux_21bit_2to1.vhd)
+
+* [testbench file](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/tb/tb_mux_21bit_2to1.vhd)
+
+**mux_driver:**
+
+* [sourse file](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/src/mux_driver.vhd)
+
+* [testbench file](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/tb/tb_mux_driver.vhd)
+
+**signal_sender:**
+
+* [sourse file](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/src/signal_sender.vhd)
+
+* [testbench file](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/tb/tb_signal_sender.vhd)
+
+**driver_7seg_8digits:**
+
+* [sourse file](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/src/driver_7seg_8digits.vhd)
+
+* [testbench file](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/tb/tb_driver_7seg_8digits.vhd)
+
+**clock_enable:**
+
+* [sourse file](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/src/clock_enable.vhd)
+
+**cnt_up_down:**
+
+* [sourse file](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/src/cnt_up_down.vhd)
+
+**seg_driver_hex:**
+
+* [sourse file](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/src/seg_driver_hex.vhd)
+
+
+
+
+
 
 ## Components simulation
 
