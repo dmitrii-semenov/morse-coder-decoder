@@ -112,6 +112,7 @@ Write an instruction manual for your application, including photos or a link to 
 
 
 **Instructions for using the morse code sender:**
+
 **1.** Activate `SW0`(up);
 
 **2.** Make sure that the green LED is on, this means that everything is in working mode;
