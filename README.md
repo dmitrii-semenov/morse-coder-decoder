@@ -34,11 +34,78 @@ The first part of our project is the button driver. It is a block that automatic
 
 Put flowchats/state diagrams of your algorithm(s) and direct links to source/testbench files in `src` and `sim` folders. 
 
-Link to source files:
-[https://github.com/dmitrii-semenov/morse-coder-decoder/tree/main/sim](https://github.com/dmitrii-semenov/morse-coder-decoder/tree/main/sim)
+**top:**
 
-Link to testbench files:
-[https://github.com/dmitrii-semenov/morse-coder-decoder/tree/main/src](https://github.com/dmitrii-semenov/morse-coder-decoder/tree/main/src)
+* [sourse file](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/src/top.vhd)
+
+* [testbench file](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/tb/tb_top.vhd)
+
+**button_driver:**
+
+* [sourse file](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/src/button_driver.vhd)
+
+* [testbench file](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/tb/tb_button_driver.vhd)
+
+**clock_divider:**
+
+* [sourse file](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/src/clock_divider.vhd)
+
+* [testbench file](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/tb/tb_clock_divider.vhd)
+
+**debouncer:**
+
+* [sourse file](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/src/debouncer.vhd)
+
+* [testbench file](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/tb/tb_debouncer.vhd)
+
+**shifter:**
+
+* [sourse file](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/src/shifter.vhd)
+
+* [testbench file](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/tb/tb_shifter.vhd)
+
+
+**mux_21bit_2to1:**
+
+* [sourse file](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/src/mux_21bit_2to1.vhd)
+
+* [testbench file](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/tb/tb_mux_21bit_2to1.vhd)
+
+**mux_driver:**
+
+* [sourse file](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/src/mux_driver.vhd)
+
+* [testbench file](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/tb/tb_mux_driver.vhd)
+
+**signal_sender:**
+
+* [sourse file](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/src/signal_sender.vhd)
+
+* [testbench file](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/tb/tb_signal_sender.vhd)
+
+**driver_7seg_8digits:**
+
+* [sourse file](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/src/driver_7seg_8digits.vhd)
+
+* [testbench file](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/tb/tb_driver_7seg_8digits.vhd)
+
+**clock_enable:**
+
+* [sourse file](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/src/clock_enable.vhd)
+
+**cnt_up_down:**
+
+* [sourse file](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/src/cnt_up_down.vhd)
+
+**seg_driver_hex:**
+
+* [sourse file](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/src/seg_driver_hex.vhd)
+
+
+
+
+
+
 ## Components simulation
 
      ~SIMULATION~
@@ -49,23 +116,32 @@ Write an instruction manual for your application, including photos or a link to 
 
 **Instructions for using the morse code receiver:**
 
-1. Bring `SW0` to active position (up);
+**1.** Leave the `SW0` in initial position (*down*);
 
-2. Make sure that the green LED is on, this means that everything is in working mode;
+**2.** Connect the input source to the pin `D14` (*for example generator*);
 
-3. To enter a point, short press the bottom button `BTND` (the red diode should be lit):
+**3.** Start sending the signal, then everything will be automatically displayed on the display as the input signal is processed.
 
-4. To enter a dash, long press the bottom button `BTND` (the blue diode should be lit);
-
-5. Press the left button `BTNL` to process and display your combination on the display (the letter or number you specified should appear);
-
-6. If you want to continue entering symbols without deleting the previous combination, then repeat steps 2-5;
-
-7. If you want to reset all symbols (so that the display becomes blank), then press the button in the middle `BTNC` (reset);
-
-8. To enter new combinations, repeat steps 2-5.
 
 **Instructions for using the morse code sender:**
+
+**1.** Activate `SW0` (*up*);
+
+**2.** Make sure that the green LED is on, this means that everything is in working mode;
+
+**3.** To enter a point, short press the bottom button `BTND` (the red diode should be lit):
+
+**4.** To enter a dash, long press the bottom button `BTND` (the blue diode should be lit);
+
+**5.** Press the left button `BTNL` to process and display your combination on the display (the letter or number you specified should appear);
+
+**6.** If you want to continue entering symbols without deleting the previous combination, then repeat steps 2-5;
+
+**7.** If you want to reset all symbols (so that the display becomes blank), then press the button in the middle `BTNC` (*reset*);
+
+**8.** To enter new combinations, repeat steps 2-5;
+
+**9.** Activate `SW1` (*up*) to send your message (at the beginning the red diode will light up, which indicates the sending process, after the green diode will light up, this means your message has been sent).
 
 ## References
 
