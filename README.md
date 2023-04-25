@@ -110,16 +110,16 @@ Write an instruction manual for your application, including photos or a link to 
 
 **Instructions for using the morse code receiver:**
 
-**1.** Leave the `SW0` in initial position (down);
+**1.** Leave the `SW0` in initial position (*down*);
 
-**2.** Connect the input source to the pin `D14`(*for example generator*);
+**2.** Connect the input source to the pin `D14` (*for example generator*);
 
 **3.** Start sending the signal, then everything will be automatically displayed on the display as the input signal is processed.
 
 
 **Instructions for using the morse code sender:**
 
-**1.** Activate `SW0`(up);
+**1.** Activate `SW0` (*up*);
 
 **2.** Make sure that the green LED is on, this means that everything is in working mode;
 
@@ -131,11 +131,11 @@ Write an instruction manual for your application, including photos or a link to 
 
 **6.** If you want to continue entering symbols without deleting the previous combination, then repeat steps 2-5;
 
-**7.** If you want to reset all symbols (so that the display becomes blank), then press the button in the middle `BTNC` (reset);
+**7.** If you want to reset all symbols (so that the display becomes blank), then press the button in the middle `BTNC` (*reset*);
 
 **8.** To enter new combinations, repeat steps 2-5;
 
-**9.** Activate `SW1`(up) to send your message (at the beginning the red diode will light up, which indicates the sending process, after the green diode will light up, this means your message has been sent).
+**9.** Activate `SW1` (*up*) to send your message (at the beginning the red diode will light up, which indicates the sending process, after the green diode will light up, this means your message has been sent).
 
 ## References
 
