@@ -110,6 +110,12 @@ Write an instruction manual for your application, including photos or a link to 
 
 **Instructions for using the morse code receiver:**
 
+**1.** Leave the `SW0` in initial position (down);
+
+**2.** Connect the input source to the pin `D14`(*for example generator*);
+
+**3.** Start sending the signal, then everything will be automatically displayed on the display as the input signal is processed.
+
 
 **Instructions for using the morse code sender:**
 
