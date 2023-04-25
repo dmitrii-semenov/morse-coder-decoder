@@ -3,7 +3,6 @@
 -- Engineer:
 --
 -- Create Date: 28.02.2023 13:19:23
--- Design Name:
 -- Module Name: hex_7seg - Behavioral
 -- Project Name:
 -- Target Devices:
