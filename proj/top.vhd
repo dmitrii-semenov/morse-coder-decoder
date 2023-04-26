@@ -20,22 +20,22 @@ library ieee;
 
 entity top is
   port (
-    CLK100MHZ     : in    std_logic;
-    D14           : in    std_logic;
-    SW0           : in    std_logic;
-    SW1           : in    std_logic;
-    BTNL          : in    std_logic;
-    BTNC          : in    std_logic;
-    BTND          : in    std_logic;
-    seg           : out    std_logic_vector(6 downto 0);
-    dig           : out   std_logic_vector(7 downto 0);
-    E16           : out    std_logic;
-    LED16_R       : out    std_logic;
-    LED16_G       : out    std_logic;
-    LED16_B       : out    std_logic;
-    LED17_R       : out    std_logic;
-    LED17_G       : out    std_logic;
-    LED17_B       : out    std_logic
+    clk100mhz : in    std_logic;
+    d14       : in    std_logic;
+    sw0       : in    std_logic;
+    sw1       : in    std_logic;
+    btnl      : in    std_logic;
+    btnc      : in    std_logic;
+    btnd      : in    std_logic;
+    seg       : out   std_logic_vector(6 downto 0);
+    dig       : out   std_logic_vector(7 downto 0);
+    e16       : out   std_logic;
+    led16_r   : out   std_logic;
+    led16_g   : out   std_logic;
+    led16_b   : out   std_logic;
+    led17_r   : out   std_logic;
+    led17_g   : out   std_logic;
+    led17_b   : out   std_logic
   );
 end entity top;
 
@@ -45,118 +45,124 @@ end entity top;
 
 architecture behavioral of top is
 
-  signal clk_ce    : std_logic;
-  signal deb_out   : std_logic;
-  signal out_a     : std_logic_vector(20 downto 0);
-  signal out_b     : std_logic_vector(20 downto 0);
-  signal out_mux   : std_logic_vector(20 downto 0);
-  signal out_1     : std_logic_vector(20 downto 0);
-  signal out_2     : std_logic_vector(20 downto 0);
-  signal out_3     : std_logic_vector(20 downto 0);
-  signal out_4     : std_logic_vector(20 downto 0);
-  signal out_5     : std_logic_vector(20 downto 0);
-  signal out_6     : std_logic_vector(20 downto 0);
-  signal out_7     : std_logic_vector(20 downto 0);
-  signal out_8     : std_logic_vector(20 downto 0);
+  signal clk_ce  : std_logic;
+  signal deb_out : std_logic;
+  signal out_a   : std_logic_vector(20 downto 0);
+  signal out_b   : std_logic_vector(20 downto 0);
+  signal out_mux : std_logic_vector(20 downto 0);
+  signal out_1   : std_logic_vector(20 downto 0);
+  signal out_2   : std_logic_vector(20 downto 0);
+  signal out_3   : std_logic_vector(20 downto 0);
+  signal out_4   : std_logic_vector(20 downto 0);
+  signal out_5   : std_logic_vector(20 downto 0);
+  signal out_6   : std_logic_vector(20 downto 0);
+  signal out_7   : std_logic_vector(20 downto 0);
+  signal out_8   : std_logic_vector(20 downto 0);
 
 begin
 
   clk_div : entity work.clock_divider
     generic map (
-      g_LENGTH => 500 -- point length in ms
+      g_length => 500000
     )
     port map (
-      clk => CLK100MHZ,
-      rst => BTNC,
+      clk => clk100mhz,
+      rst => btnc,
       ce  => clk_ce
     );
 
   deb : entity work.debouncer
+    generic map (
+      g_debounce => 300000
+    )
     port map (
-      clk => CLK100MHZ,
-      rst => BTNC,
-      input => BTND,
+      clk    => clk100mhz,
+      rst    => btnc,
+      input  => btnd,
       output => deb_out
     );
 
   shift : entity work.shifter
     port map (
-      clk => clk_ce,
-      rst => BTNC,
-      SW => SW0,
-      input => D14,
+      clk    => clk_ce,
+      rst    => btnc,
+      sw     => sw0,
+      input  => d14,
       output => out_a
     );
 
   butt_driver : entity work.button_driver
-  port map (
-    clk => clk_ce,
-    rst => BTNC,
-    SW => SW0,
-    input => deb_out,
-    send => BTNL,
-    output => out_b,
-    LED17_R => LED17_R,
-    LED17_G => LED17_G,
-    LED17_B => LED17_B
-  );
+    port map (
+      clk     => clk_ce,
+      rst     => btnc,
+      sw      => sw0,
+      input   => deb_out,
+      send    => btnl,
+      output  => out_b,
+      led17_r => led17_r,
+      led17_g => led17_g,
+      led17_b => led17_b
+    );
 
   mux : entity work.mux_21bit_2to1
-  port map (
-    a => out_a,
-    b => out_b,
-    f => out_mux,
-    slc => SW0
-  );
+    port map (
+      a   => out_a,
+      b   => out_b,
+      f   => out_mux,
+      slc => sw0
+    );
 
   mux_driv : entity work.mux_driver
-  port map (
-    clk => CLK100MHZ,
-    rst => BTNC,
-    input => out_mux,--out_mux
-    output1 => out_1,
-    output2 => out_2,
-    output3 => out_3,
-    output4 => out_4,
-    output5 => out_5,
-    output6 => out_6,
-    output7 => out_7,
-    output8 => out_8
-  );
+    port map (
+      clk     => clk100mhz,
+      rst     => btnc,
+      input   => out_mux,
+      output1 => out_1,
+      output2 => out_2,
+      output3 => out_3,
+      output4 => out_4,
+      output5 => out_5,
+      output6 => out_6,
+      output7 => out_7,
+      output8 => out_8
+    );
 
   seg_driv : entity work.driver_7seg_8digits
-  port map (
-    clk => CLK100MHZ,
-    rst => BTNC,
-    data1 => out_1,
-    data2 => out_2,
-    data3 => out_3,
-    data4 => out_4,
-    data5 => out_5,
-    data6 => out_6,
-    data7 => out_7,
-    data8 => out_8,
-    seg => seg,
-    dig => dig
-  );
+    generic map (
+      g_max => 200000
+    )
+    port map (
+      clk   => clk100mhz,
+      rst   => btnc,
+      data1 => out_1,
+      data2 => out_2,
+      data3 => out_3,
+      data4 => out_4,
+      data5 => out_5,
+      data6 => out_6,
+      data7 => out_7,
+      data8 => out_8,
+      seg   => seg,
+      dig   => dig
+    );
 
   sender : entity work.signal_sender
-  port map (
-    clk => clk_ce,
-    rst => BTNC,
-    data1 => out_1,
-    data2 => out_2,
-    data3 => out_3,
-    data4 => out_4,
-    data5 => out_5,
-    data6 => out_6,
-    data7 => out_7,
-    data8 => out_8,
-    send => SW1,
-    output => E16,
-    LED16_R => LED16_R,
-    LED16_G => LED16_G,
-    LED16_B => LED16_B
-  );
+    port map (
+      clk     => clk_ce,
+      rst     => btnc,
+      data1   => out_1,
+      data2   => out_2,
+      data3   => out_3,
+      data4   => out_4,
+      data5   => out_5,
+      data6   => out_6,
+      data7   => out_7,
+      data8   => out_8,
+      send    => sw1,
+      output  => e16,
+      led16_r => led16_r,
+      led16_g => led16_g,
+      led16_b => led16_b
+    );
 
 end architecture behavioral;

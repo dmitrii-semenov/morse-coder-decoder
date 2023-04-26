@@ -19,19 +19,22 @@ library ieee;
 ----------------------------------------------------------
 
 entity driver_7seg_8digits is
+  generic (
+    g_max : natural := 2 -- 200000
+  );
   port (
-    clk     : in    std_logic;
-    rst     : in    std_logic;
-    data1   : in    std_logic_vector(20 downto 0);
-    data2   : in    std_logic_vector(20 downto 0);
-    data3   : in    std_logic_vector(20 downto 0);
-    data4   : in    std_logic_vector(20 downto 0);
-    data5   : in    std_logic_vector(20 downto 0);
-    data6   : in    std_logic_vector(20 downto 0);
-    data7   : in    std_logic_vector(20 downto 0);
-    data8   : in    std_logic_vector(20 downto 0);
-    seg     : out   std_logic_vector(6 downto 0);
-    dig     : out   std_logic_vector(7 downto 0)
+    clk   : in    std_logic;
+    rst   : in    std_logic;
+    data1 : in    std_logic_vector(20 downto 0);
+    data2 : in    std_logic_vector(20 downto 0);
+    data3 : in    std_logic_vector(20 downto 0);
+    data4 : in    std_logic_vector(20 downto 0);
+    data5 : in    std_logic_vector(20 downto 0);
+    data6 : in    std_logic_vector(20 downto 0);
+    data7 : in    std_logic_vector(20 downto 0);
+    data8 : in    std_logic_vector(20 downto 0);
+    seg   : out   std_logic_vector(6 downto 0);
+    dig   : out   std_logic_vector(7 downto 0)
   );
 end entity driver_7seg_8digits;
 
@@ -58,7 +61,7 @@ begin
   --------------------------------------------------------
   clk_en0 : entity work.clock_enable
     generic map (
-      g_MAX => 200000
+      g_max => g_max
     )
     port map (
       clk => clk,
@@ -72,15 +75,15 @@ begin
   --------------------------------------------------------
   bin_cnt0 : entity work.cnt_up_down
     generic map (
-      g_CNT_WIDTH => 3
+      g_cnt_width => 3
     )
     port map (
-      clk => clk,
-      rst => rst,
-      en => sig_en_2ms,
+      clk    => clk,
+      rst    => rst,
+      en     => sig_en_2ms,
       cnt_up => '0',
-      cnt => sig_cnt_3bit
-      
+      cnt    => sig_cnt_3bit
+
     );
 
   --------------------------------------------------------
@@ -112,34 +115,42 @@ begin
         case sig_cnt_3bit is
 
           when "111" =>
+
             sig_hex <= data8;
             dig     <= "01111111";
 
           when "110" =>
+
             sig_hex <= data7;
             dig     <= "10111111";
 
           when "101" =>
+
             sig_hex <= data6;
             dig     <= "11011111";
-            
+
           when "100" =>
+
             sig_hex <= data5;
             dig     <= "11101111";
-            
+
           when "011" =>
+
             sig_hex <= data4;
             dig     <= "11110111";
-          
+
           when "010" =>
+
             sig_hex <= data3;
             dig     <= "11111011";
-            
+
           when "001" =>
+
             sig_hex <= data2;
             dig     <= "11111101";
-            
+
           when others =>
+
             sig_hex <= data1;
             dig     <= "11111110";
 
