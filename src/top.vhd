@@ -63,7 +63,7 @@ begin
 
   clk_div : entity work.clock_divider
     generic map (
-      g_length => 1
+      g_length => 500000
     )
     port map (
       clk => clk100mhz,
@@ -73,7 +73,7 @@ begin
 
   deb : entity work.debouncer
     generic map (
-      g_debounce => 5
+      g_debounce => 300000
     )
     port map (
       clk    => clk100mhz,
@@ -129,7 +129,7 @@ begin
 
   seg_driv : entity work.driver_7seg_8digits
     generic map (
-      g_max => 250
+      g_max => 200000
     )
     port map (
       clk   => clk100mhz,
