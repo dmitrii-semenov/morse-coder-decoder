@@ -145,7 +145,7 @@ Write an instruction manual for your application, including photos or a link to 
 
 ## Video demonstration
 
-![Watch a video](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/video/morse-receiver.mp4)
+![Watch a video](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/video/morse-receiver.gif)
 
 ## References
 
