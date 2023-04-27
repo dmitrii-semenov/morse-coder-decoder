@@ -148,6 +148,10 @@ Demonstration of the `"receiver"` mode
 
 ![Watch a video](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/video/morse-receiver.gif)
 
+Demonstration of the `"sender"` mode
+
+[![Watch a video](https://img.youtube.com/vi/6ZALID0tZt0/0.jpg)](https://www.youtube.com/watch?v=6ZALID0tZt0)
+
 ## References
 
 1. [Reference manual](https://reference.digilentinc.com/reference/programmable-logic/nexys-a7/reference-manual) of the Nexys A7 board
