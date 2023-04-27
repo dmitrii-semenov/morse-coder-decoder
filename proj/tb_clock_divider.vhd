@@ -18,7 +18,7 @@ library ieee;
 ----------------------------------------------------------
 
 entity tb_clock_divider is
-  -- Entity of testbench is always empty
+-- Entity of testbench is always empty
 end entity tb_clock_divider;
 
 ----------------------------------------------------------
@@ -27,8 +27,8 @@ end entity tb_clock_divider;
 
 architecture testbench of tb_clock_divider is
 
-  constant c_LENGTH            : natural := 1;
-  constant c_CLK_100MHZ_PERIOD : time    := 10 ns;
+  constant c_length            : natural := 10;
+  constant c_clk_100mhz_period : time    := 10 ns;
 
   -- Local signals
   signal sig_clk_100mhz : std_logic;
@@ -41,9 +41,9 @@ begin
   -- (Unit Under Test)
   uut_ce : entity work.clock_divider
     generic map (
-      g_LENGTH  => c_LENGTH 
-    ) -- Note that there is NO comma or semicolon between
-      -- generic map section and port map section
+      g_length => c_length
+    )
+    -- generic map section and port map section
     port map (
       clk => sig_clk_100mhz,
       rst => sig_rst,
@@ -56,14 +56,15 @@ begin
   p_clk_gen : process is
   begin
 
-    while now < 10 ms loop             -- 75 periods of 100MHz clock
+    while now < 100 us loop              -- 75 periods of 100MHz clock
 
       sig_clk_100mhz <= '0';
-      wait for c_CLK_100MHZ_PERIOD / 2;
+      wait for c_clk_100mhz_period / 2;
       sig_clk_100mhz <= '1';
-      wait for c_CLK_100MHZ_PERIOD / 2;
+      wait for c_clk_100mhz_period / 2;
 
     end loop;
+
     wait;                               -- Process is suspended forever
 
   end process p_clk_gen;

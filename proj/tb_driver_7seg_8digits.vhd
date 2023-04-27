@@ -7,7 +7,7 @@ library ieee;
 ----------------------------------------------------------
 
 entity tb_driver_7seg_8digits is
-  -- Entity of testbench is always empty
+-- Entity of testbench is always empty
 end entity tb_driver_7seg_8digits;
 
 ----------------------------------------------------------
@@ -17,7 +17,7 @@ end entity tb_driver_7seg_8digits;
 architecture testbench of tb_driver_7seg_8digits is
 
   -- Testbench local constants
-  constant c_CLK_100MHZ_PERIOD : time := 10 ns;
+  constant c_clk_100mhz_period : time := 10 ns;
 
   -- Testench local signals
   signal sig_clk_100mhz : std_logic;
@@ -39,18 +39,18 @@ begin
   -- entity (Unit Under Test)
   uut_driver_7seg_8digits : entity work.driver_7seg_8digits
     port map (
-      clk     => sig_clk_100mhz,
-      rst     => sig_rst,
-      data1   => sig_data1,
-      data2   => sig_data2,
-      data3   => sig_data3,
-      data4   => sig_data4,
-      data5   => sig_data5,
-      data6   => sig_data6,
-      data7   => sig_data7,
-      data8   => sig_data8,
-      seg     => sig_seg,
-      dig     => sig_dig
+      clk   => sig_clk_100mhz,
+      rst   => sig_rst,
+      data1 => sig_data1,
+      data2 => sig_data2,
+      data3 => sig_data3,
+      data4 => sig_data4,
+      data5 => sig_data5,
+      data6 => sig_data6,
+      data7 => sig_data7,
+      data8 => sig_data8,
+      seg   => sig_seg,
+      dig   => sig_dig
     );
 
   --------------------------------------------------------
@@ -62,11 +62,12 @@ begin
     while now < 400 ns loop -- 40 periods of 100MHz clock
 
       sig_clk_100mhz <= '0';
-      wait for c_CLK_100MHZ_PERIOD / 2;
+      wait for c_clk_100mhz_period / 2;
       sig_clk_100mhz <= '1';
-      wait for c_CLK_100MHZ_PERIOD / 2;
+      wait for c_clk_100mhz_period / 2;
 
     end loop;
+
     wait;
 
   end process p_clk_gen;
