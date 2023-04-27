@@ -144,7 +144,7 @@ Write an instruction manual for your application, including photos or a link to 
 **9.** Activate `SW1` (*up*) to send your message (at the beginning the red diode will light up, which indicates the sending process, after the green diode will light up, this means your message has been sent).
 
 ## Video demonstration
-
+Demonstration of the `"receiver"` mode
 ![Watch a video](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/video/morse-receiver.gif)
 
 ## References
