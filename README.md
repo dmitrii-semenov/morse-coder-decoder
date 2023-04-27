@@ -146,7 +146,7 @@ Write an instruction manual for your application, including photos or a link to 
 ## Video demonstration
 Demonstration of the `"receiver"` mode
 
-[![Watch a video](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/receiver.png)](https://www.youtube.com/shorts/d-faGH0KTpc)
+[![Watch a video](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/receiver.jpg)](https://www.youtube.com/shorts/d-faGH0KTpc)
 
 Demonstration of the `"sender"` mode
 
