@@ -143,8 +143,12 @@ Write an instruction manual for your application, including photos or a link to 
 
 **9.** Activate `SW1` (*up*) to send your message (at the beginning the red diode will light up, which indicates the sending process, after the green diode will light up, this means your message has been sent).
 
+## Video demonstration
+
+![Watch a video](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+
 ## References
 
 1. [Reference manual](https://reference.digilentinc.com/reference/programmable-logic/nexys-a7/reference-manual) of the Nexys A7 board
 2. [Morse code](https://en.wikipedia.org/wiki/File:International_Morse_Code.svg) for letters encryption
-3. [General information](https://en.wikipedia.org/wiki/Morse_code) about Morse code
+3. [General information](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/video/morse-receiver.gif) about Morse code
