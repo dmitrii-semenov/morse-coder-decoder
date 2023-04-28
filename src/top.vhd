@@ -35,7 +35,8 @@ entity top is
     led16_b   : out   std_logic;
     led17_r   : out   std_logic;
     led17_g   : out   std_logic;
-    led17_b   : out   std_logic
+    led17_b   : out   std_logic;
+    led_sig   : out   std_logic
   );
 end entity top;
 
@@ -47,6 +48,7 @@ architecture behavioral of top is
 
   signal clk_ce  : std_logic;
   signal deb_out : std_logic;
+  signal sig_16  : std_logic;
   signal out_a   : std_logic_vector(20 downto 0);
   signal out_b   : std_logic_vector(20 downto 0);
   signal out_mux : std_logic_vector(20 downto 0);
@@ -159,10 +161,12 @@ begin
       data7   => out_7,
       data8   => out_8,
       send    => sw1,
-      output  => e16,
+      output  => sig_16,
       led16_r => led16_r,
       led16_g => led16_g,
       led16_b => led16_b
     );
+  led_sig <= sig_16;
+  e16 <= sig_16;
 
 end architecture behavioral;
