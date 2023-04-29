@@ -39,6 +39,22 @@ This block filters the input signal from the button `BTND` (the user sets a comb
 
 This block automatically detects if a user presses the input button `BTND`. Block also determines if the button is pressed for a short period (dot) or an extended period (dash) — the length of determination of a dot set by a constant `g_LENGTH` at the top level. Once the combination of dots and dashes is complete, the user sends the combination using the `BTNL` button. This block is essential for the "sender" mode of our device. The `SWO` switch position changes two modes, "sender" and "receiver." While the switch is activated (logical '1'), the device works in "sender" mode, and the work process of this block is enabled. One output pin is connected to the multiplexer, and three led pins are connected to RGB led. LED works as follows: The green LED is activated once the device is ready to get the input combination of dots and dashes. Once the user starts to hold the button `BTND` for at least the `g_LENGTH` period, the red LED is activated. That means the user holds the button enough to send a dot. If the user releases the button, the block reads the dot signal, and the green LED is activated, which means the clock is ready for the other symbol. If the user continues to hold the `BTND` button while the LED is red, alter 2-time intervals `g_LENGTH` (3 in total with the first that activates the red LED), LED turn into blue. In this situation, a dash signal will be sent to the block. After releasing a button, the LED will turn back to green color. Once the combination is finished, the user press and hold the `BTNL` button (send) until the letter appears on the 7-segment display. Simulation with all necessary signals is presented below.
 
+**Multiplexer**
+
+This block is a regular 2-to-1 multiplexer 21-bit. The `slc` signal, which is `SW0`(it is a switch that sets one of two working modes), controls which of the input signals is transferred to the output. We mainly used a multiplexer to avoid a short between the output pins of the `button_driver` and `shifter`.
+
+**Mux driver**
+
+This block is an input driver for our 7-segment displays. When the input signal changes its value, the driver shifts all output signals on one segment to the left. The last letter/number will be displayed on the right display cell. This block also works as a "memory" cell that remembers the last 8 letters/numbers entered. Thanks to it, we can display 8 symbols simultaneously instead of 1. 
+
+**Display driver**
+
+This block is a driver for our 7-segment displays. It switches the anodes of all displays sequentially to set the symbol on each display. This block consists of `clock_enable` (clock divider that increases clock period to a specific value so that the user will not recognize the anode switch process), `counter_up_down` (that counts from 1 to 8 to switch all the anodes. sequentially), `p_mux` (this part connects inputs to outputs via switches) and `seg_driver_hex` (that transforms 21-bit signals of specific symbols to 7-bit signals, that activates different display segments).
+
+**Signal sender**
+
+The last block is a signal sender. Once switch `SW1` is activated, this block sends the Morse code signal to the output pin `E16`. The length of a dot is defined by a constant `g_LENGTH` at the top level (this constant is used in `shifter`, `clock_divider`, and `button_driver`). Once switch `SW1` is activated, the right RGB LED (`LED16`) will turn red. That indicates that signal sending is in process. Once all the letters from a display are sent, RGB LED will turn green, indicating the procedure's finish. (Note that only symbols on display will be sent from the left symbol to the right) 
+
 ## Software description 
 
 **top:**
