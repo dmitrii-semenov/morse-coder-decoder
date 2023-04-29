@@ -16,7 +16,7 @@ Moreover, in this way, the user could enter the desired combination and display 
 
 Block diagram for `top`:
 
-![]()
+![https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/top.jpg](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/top.jpg)
 
 Block diagram for `driver_7seg_8dig`:
 
