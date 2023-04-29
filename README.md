@@ -25,7 +25,15 @@ Block diagram for `driver_7seg_8dig`:
 
 **Clock divider**
 
-This block decreases the period of a clock signal, which is essential for the synchronous process. The user specifies a `g_LENGTH` constant, the length of a dot, in us. For example, if the value of `g_LENGTH` is 500 000, the dot length is 500 ms. The output clock signal will appear with a defined period instead of a default clock signal with 10 ns period. The divided clock signal is then used in the `button driver` and `sender` blocks to set the dot length.
+This block decreases the period of a clock signal, which is essential for the synchronous process. The user specifies a `g_LENGTH` constant, the length of a dot, in us. For example, if the value of `g_LENGTH` is 500 000, the dot length is `500 ms`. The output clock signal will appear with a defined period instead of a default clock signal with 10 ns period. The divided clock signal is then used in the `shifter`, `button driver` and `sender` blocks to set the dot length.
+
+**Shifter**
+
+This block is essential for the "receiver" mode of our device. The `SWO` switch position changes two modes, "sender" and "receiver." While the switch is deactivated (logical '0'), the device works in "receiver" mode, and the work process of this block is enabled. The input is connected to pin `D14`. That means that signal from the generator (morse code sender) is connected directly to the `shifter`. The `shifter` counts how long(in clocks) lasts signal '0'; thus, the `shifter` divides the input signal into separate letters. Thanks to the strict rules in Morse code, the `shifter` also may determine the structure of each letter or number (dots and dashes combination). As a result, a `21-bit signal` (for a specific letter or number) will appear on the output whenever a combination of signals is provided to the input pin.
+
+**Debouncer**
+
+This block filters the input signal from the button `BTND` (the user sets a combination of dots and dashes by pressing this button). To prevent noise or oscillations from the mechanical button (the real button may add noise to the signal or oscillations between '0' and '1' signal levels). The debouncer works in a way: it controls the input value of a signal (which is a `BTND` signal). If the value does not change for `3 ms`, it copies the input signal to the output. Of course, this block adds a `3 ms` delay, but that is not critical as potential problems may occur due to noise and oscillations.
 
 **Button driver**
 
