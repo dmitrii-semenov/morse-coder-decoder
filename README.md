@@ -4,12 +4,13 @@ Topic: Sender and receiver of the Morse code.
 
 ### Team members
 
-* Dmitrii Semenov (responsible for top level simulation, debugging, VHDL programing)
-* Roman Lunin (responsible for VHDL programing, github design)
+* Dmitrii Semenov (responsible for the top level simulation, debugging, VHDL programing, hardware description)
+* Roman Lunin (responsible for VHDL programing, github design, software description)
 
 ## Theoretical description and explanation
 
-Our task was to create a valid Morse code receiver and sender. At the beginning of the development of our project, we had several ideas for implementing a solution to our problem. The first idea for the receiver was to have the user specify combinations of dots and dashes using switches, for which we would require 10 switches (since the maximum combination length is 5 dashes). But we decided to refuse this idea and solve the issue in a different way. Our second idea was for the user to enter combinations using the buttons located on our `nexys-a7-50t` board. A dot would be a short press on the button (short press could be controlled by RGB LEDs, meaning the user would know when to release the button for only the dot to count), a long press would mean a dash. And in this way, the user could enter the desired combination and display a letter or number on a 7-segment display, and in case of an error, easily reset everything using the reset button. Also for the Morse code sender, we decided to use buttons where the user types the necessary symbols in the same way and sends using the "send" button. This idea seemed to us much more interesting and better for the implementation of our project.
+Our task was to create a functional Morse code receiver and sender. At the development stage of our project, we had several ideas for implementing a solution to our problem. The first idea was to have the user specify combinations of dots and dashes using switches(for the `sender` mode), for which we would require 10 switches (since the maximum combined length of one symbol is 5 dashes). However, we decided to refuse this idea and find a different solution. Our second idea was to enter combinations using the buttons on our `nexys-a7-50t` board. A dot would be a short press on the button (a short press could be controlled by RGB LED, meaning the user would know when to release the button for only the dot to count), and a long press would mean a dash.
+Moreover, in this way, the user could enter the desired combination and display a letter or number on a 7-segment display. In case of an error, there is a possibility to reset everything using the reset button. The Morse code receiver would be built using signal value counters. Thus no user actions are required for this mode. This idea was much more exciting and better for implementing our project.
 
 ## Hardware description of demo application
 
@@ -112,33 +113,35 @@ The last block is a signal sender. Once switch `SW1` is activated, this block se
 
 ## Instructions
 
-**Instructions for using the morse code receiver:**
+**Instructions for using the Morse code receiver:**
 
-**1.** Leave the `SW0` in initial position (*down*);
+**1.** Deactivate `SW0`(*down*);
 
 **2.** Connect the input source to the pin `D14` (*for example generator*);
 
-**3.** Start sending the signal, then everything will be automatically displayed on the display as the input signal is processed.
+**3.** Start sending the signal, then everything will be automatically displayed as the input signal is processed.
 
 **Instructions for using the morse code sender:**
 
 **1.** Activate `SW0` (*up*);
 
-**2.** Make sure that the green LED is on, this means that everything is in working mode;
+**2.** Make sure that the left RGB LED is green. This means that everything is in working mode;
 
-**3.** To enter a point, short press the bottom button `BTND` (the red diode should be lit):
+**3.** To enter a point, short press the bottom button `BTND` (the RGB LED will turn red);
 
-**4.** To enter a dash, long press the bottom button `BTND` (the blue diode should be lit);
+**4.** To enter a dash, continue to hold the bottom button `BTND` (the RGB LED will turn blue);
 
-**5.** Press the left button `BTNL` to process and display your combination on the display (the letter or number you specified should appear);
+**5.** To enter a new dot or dash, release the button `BTND` and return to step 2(the RGB LED will turn green);
 
-**6.** If you want to continue entering symbols without deleting the previous combination, then repeat steps 2-5;
+**6.** Press the left button `BTNL` to send the symbol you just typed and to display your combination on display (the letter or number you specified should appear);
 
-**7.** If you want to reset all symbols (so that the display becomes blank), then press the button in the middle `BTNC` (*reset*);
+**7.** If you want to continue entering symbols without deleting the previous combination, then repeat steps 2-6;
 
-**8.** To enter new combinations, repeat steps 2-5;
+**8.** If you want to reset all symbols (so that the display becomes blank), then press the button in the middle `BTNC` (*reset*);
 
-**9.** Activate `SW1` (*up*) to send your message (at the beginning the red diode will light up, which indicates the sending process, after the green diode will light up, this means your message has been sent).
+**9.** To enter new combinations, repeat steps 2-6;
+
+**10.** Activate `SW1` (*up*) to send your message (at the beginning, the right RGB LED will turn red, which indicates the sending process. When the right RGB LED turns green, this means your message has been sent).
 
 ## Video demonstration
 Demonstration of the `"receiver"` mode
