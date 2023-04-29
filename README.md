@@ -37,7 +37,7 @@ Put flowchats/state diagrams of your algorithm(s) and direct links to source/tes
 
 **top:**
 
-* [sourse file](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/src/top.vhd)  * [testbench file](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/tb/tb_top.vhd)
+* [sourse file](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/src/top.vhd)            [testbench file](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/tb/tb_top.vhd)
 
 **button_driver:**
 
