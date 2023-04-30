@@ -145,7 +145,7 @@ The last block is a signal sender. Once switch `SW1` is activated, this block se
 
 **`sig_clk_100mhz`** - reduced clock
 
-**`SW`** - switch `SW0` with which we select the receiver (`SW0` in the down position)
+**`sw`** - switch `SW0` with which we select the receiver (`SW0` in the down position)
 
 
 **button_driver:**
@@ -164,7 +164,7 @@ The last block is a signal sender. Once switch `SW1` is activated, this block se
 
 **`sig_clk_100mhz`** - reduced clock
 
-**`SW`** - switch `SW0` with which we select the sender (`SW0` in the up position)
+**`sw`** - switch `SW0` with which we select the sender (`SW0` in the up position)
 
 
 **mux_21bit_2to1:**
@@ -246,9 +246,9 @@ The last block is a signal sender. Once switch `SW1` is activated, this block se
 
 **`seg`** - a 7-bit signal that tells which segments should be lit for a particular combination
 
-**`SW`** - switch `SW0` with which we select the sender or the receiver
+**`sw`** - switch `SW0` with which we select the sender or the receiver
 
-**`SW1`** - switch `SW1` with which the sending is carried out
+**`sw1`** - switch `SW1` with which the sending is carried out
 
 ## Instructions
 
