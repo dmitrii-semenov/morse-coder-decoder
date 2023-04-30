@@ -154,7 +154,7 @@ The last block is a signal sender. Once switch `SW1` is activated, this block se
 
 **`input`** - the signal that comes from debouncer
 
-**`led17_b`**, **`led17_g`** and **`led17_r`** - indication of the time frame for the introduction of combinations and indication and mode indication
+**`led17_b`**, **`led17_g`** and **`led17_r`** - indication of the time frame for the introduction of combinations and mode indication
 
 **`output`** - output 21-bit signal going to the input of the mux_21bit_2to1 (input b)
 
@@ -240,7 +240,7 @@ The last block is a signal sender. Once switch `SW1` is activated, this block se
 
 **`led16_b`**, **`led16_g`** and **`led16_r`** - sending progress indication
 
-**`led17_b`**, **`led17_g`** and **`led17_r`** - indication of the time frame for the introduction of combinations and indication and mode indication
+**`led17_b`**, **`led17_g`** and **`led17_r`** - indication of the time frame for the introduction of combinations and mode indication
 
 **`led_sig`** - 
 
