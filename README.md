@@ -181,7 +181,7 @@ The last block is a signal sender. Once switch `SW1` is activated, this block se
 
 **`input`** - input signal with original combination from mux_21bit_2to1
 
-**` from output1 to output8`** - these are all combinations entered by the user for displaying on displays and for further sending
+**`from output1 to output8`** - these are all combinations entered by the user for displaying on displays and for further sending
 
 **`rst`** - reset (button `BTNC`)
 
