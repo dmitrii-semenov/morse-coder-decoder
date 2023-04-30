@@ -179,6 +179,10 @@ The last block is a signal sender. Once switch `SW1` is activated, this block se
 
 ![https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/mux_driver.png](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/mux_driver.png)
 
+**`input`** - input signal with original combination from mux_21bit_2to1
+
+**`output1-output8`** - 
+
 
 
 ## Instructions
