@@ -135,6 +135,14 @@ The last block is a signal sender. Once switch `SW1` is activated, this block se
 
 ![https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/debouncer.png](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/debouncer.png)
 
+`input` - the signal that is set by the `BTND` button
+
+`output` - the signal that goes to the input of the button_driver
+
+`rst` - reset
+
+`sig_clk_100mhz` - regular clock with a frequency of 100MHz
+
 
 
 
