@@ -113,8 +113,10 @@ The last block is a signal sender. Once switch `SW1` is activated, this block se
 
 ![https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/clock_divider.png](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/clock_divider.png)
 
-sig_ce - outgoing signal from clock_divider
-
+`sig_ce` - outgoing signal from clock_divider
+`sig_clk_100mhz` - regular clock with a frequency of 100MHz
+`sig_rst` - reset
+ 
 ## Instructions
 
 **Instructions for using the Morse code receiver:**
