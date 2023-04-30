@@ -143,6 +143,10 @@ The last block is a signal sender. Once switch `SW1` is activated, this block se
 
 `sig_clk_100mhz` - regular clock with a frequency of 100MHz
 
+**shifter:**
+
+![https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/shifter.png](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/shifter.png)
+
 
 
 
