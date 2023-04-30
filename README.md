@@ -191,7 +191,15 @@ The last block is a signal sender. Once switch `SW1` is activated, this block se
 
 ![https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/driver_7seg_8digits.png](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/driver_7seg_8digits.png)
 
+**`sig_clk_100mhz`** - regular clock with a frequency of 100MHz
 
+**`from sig_data1 to sig_data8 `** - these are all the combinations entered at the beginning by the user that came from the mux_driver and which need to be displayed on the 7-segment displays
+
+**`sig_dig`** - 8-bit signal that tells which of the 8 positions entered symbol will be
+
+**`sig_rst`** - reset (button `BTNC`)
+
+**`sig_seg`** - a 7-bit signal that tells which segments should be lit for a particular combination
 
 
 
