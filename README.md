@@ -159,7 +159,7 @@ The last block is a signal sender. Once switch `SW1` is activated, this block se
 
 **button_driver:**
 
-![]()
+![https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/button_driver.png](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/button_driver.png)
 
 
 
