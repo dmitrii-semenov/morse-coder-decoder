@@ -119,6 +119,13 @@ The last block is a signal sender. Once switch `SW1` is activated, this block se
 
 `sig_rst` - reset
 
+**mux_21bit_2to1:**
+
+![https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/mux_21bit_2to1.png](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/mux_21bit_2to1.png)
+
+
+
+
 ## Instructions
 
 **Instructions for using the Morse code receiver:**
