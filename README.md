@@ -119,18 +119,6 @@ The last block is a signal sender. Once switch `SW1` is activated, this block se
 
 **`sig_rst`** - reset (button `BTNC`)
 
-**mux_21bit_2to1:**
-
-![https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/mux_21bit_2to1.png](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/mux_21bit_2to1.png)
-
-**`s_a`** - signal coming from shifter
-
-**`s_b`** - signal coming from button_driver
-
-**`s_f`** - output signal going to mux_driver
-
-**`slc`** - signal, which controls which of the input signals is transferred to the output
-
 **debouncer:**
 
 ![https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/debouncer.png](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/debouncer.png)
@@ -175,6 +163,17 @@ The last block is a signal sender. Once switch `SW1` is activated, this block se
 
 **`SW`** - switch `SW0` with which we select the sender (`SW0` in the up position)
 
+**mux_21bit_2to1:**
+
+![https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/mux_21bit_2to1.png](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/mux_21bit_2to1.png)
+
+**`s_a`** - signal coming from shifter
+
+**`s_b`** - signal coming from button_driver
+
+**`s_f`** - output signal going to mux_driver
+
+**`slc`** - signal, which controls which of the input signals is transferred to the output
 
 
 
