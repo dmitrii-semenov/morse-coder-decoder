@@ -119,6 +119,7 @@ The last block is a signal sender. Once switch `SW1` is activated, this block se
 
 **`sig_rst`** - reset (button `BTNC`)
 
+
 **debouncer:**
 
 ![https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/debouncer.png](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/debouncer.png)
@@ -130,6 +131,7 @@ The last block is a signal sender. Once switch `SW1` is activated, this block se
 **`rst`** - reset (button `BTNC`)
 
 **`sig_clk_100mhz`** - regular clock with a frequency of 100MHz
+
 
 **shifter:**
 
@@ -145,6 +147,7 @@ The last block is a signal sender. Once switch `SW1` is activated, this block se
 
 **`SW`** - switch `SW0` with which we select the receiver (`SW0` in the down position)
 
+
 **button_driver:**
 
 ![https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/button_driver.png](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/button_driver.png)
@@ -152,7 +155,6 @@ The last block is a signal sender. Once switch `SW1` is activated, this block se
 **`input`** - the signal that comes from debouncer
 
 **`led17_b`**, **`led17_g`** and **`led17_r`** - indication of the time frame for the introduction of combinations and indication and mode indication
- 
 
 **`output`** - output 21-bit signal going to the input of the mux_21bit_2to1 (input b)
 
@@ -163,6 +165,7 @@ The last block is a signal sender. Once switch `SW1` is activated, this block se
 **`sig_clk_100mhz`** - reduced clock
 
 **`SW`** - switch `SW0` with which we select the sender (`SW0` in the up position)
+
 
 **mux_21bit_2to1:**
 
@@ -176,6 +179,7 @@ The last block is a signal sender. Once switch `SW1` is activated, this block se
 
 **`slc`** - signal, which controls which of the input signals is transferred to the output
 
+
 **mux_driver:**
 
 ![https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/mux_driver.png](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/mux_driver.png)
@@ -187,6 +191,7 @@ The last block is a signal sender. Once switch `SW1` is activated, this block se
 **`rst`** - reset (button `BTNC`)
 
 **`sig_clk_100mhz`** - regular clock with a frequency of 100MHz
+
 
 **driver_7seg_8dig:**
 
@@ -201,6 +206,7 @@ The last block is a signal sender. Once switch `SW1` is activated, this block se
 **`sig_rst`** - reset (button `BTNC`)
 
 **`sig_seg`** - a 7-bit signal that tells which segments should be lit for a particular combination
+
 
 **signal_sender:**
 
@@ -217,6 +223,7 @@ The last block is a signal sender. Once switch `SW1` is activated, this block se
 **`send`** - sending which is carried out using a switch `SW1`
 
 **`sig_clk_100mhz`** - reduced clock
+
 
 **top:**
 
