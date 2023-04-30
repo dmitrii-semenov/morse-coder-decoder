@@ -109,6 +109,11 @@ The last block is a signal sender. Once switch `SW1` is activated, this block se
 
 ## Components simulation
 
+**clock_divider**
+
+![https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/clock_divider.png](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/clock_divider.png)
+
+
      ~SIMULATION~
 
 ## Instructions
