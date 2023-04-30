@@ -230,10 +230,25 @@ The last block is a signal sender. Once switch `SW1` is activated, this block se
 ![https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/top.png](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/top.png)
 
 
+**`btnc`** - reset (button `BTNC`)
 
+**`btnd`** - a button with which the user sets a combination of dots and dashes
 
+**`btnl`** - a button with which the user sends a combination for display on displays
 
+**`sig_clk_100mhz`** - regular clock with a frequency of 100MHz
 
+**`led16_b`**, **`led16_g`** and **`led16_r`** - sending progress indication
+
+**`led17_b`**, **`led17_g`** and **`led17_r`** - indication of the time frame for the introduction of combinations and indication and mode indication
+
+**`led_sig`** - 
+
+**`seg`** - a 7-bit signal that tells which segments should be lit for a particular combination
+
+**`SW`** - switch `SW0` with which we select the sender or the receiver
+
+**`SW1`** - switch `SW1` with which the sending is carried out
 
 ## Instructions
 
