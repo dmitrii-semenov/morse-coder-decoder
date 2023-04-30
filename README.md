@@ -201,6 +201,10 @@ The last block is a signal sender. Once switch `SW1` is activated, this block se
 
 **`sig_seg`** - a 7-bit signal that tells which segments should be lit for a particular combination
 
+**signal_sender:**
+
+![https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/signal_sender.png](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/signal_sender.png)
+
 
 
 ## Instructions
