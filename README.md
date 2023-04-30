@@ -113,11 +113,11 @@ The last block is a signal sender. Once switch `SW1` is activated, this block se
 
 ![https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/clock_divider.png](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/clock_divider.png)
 
-**`sig_ce`** - outgoing signal from clock_divider
+**`sig_ce`** - outgoing signal from clock_divider (reduced clock)
 
 **`sig_clk_100mhz`** - regular clock with a frequency of 100MHz
 
-**`sig_rst`** - reset
+**`sig_rst`** - reset (button `BTNC`)
 
 **mux_21bit_2to1:**
 
@@ -139,7 +139,7 @@ The last block is a signal sender. Once switch `SW1` is activated, this block se
 
 **`output`** - the signal that goes to the input of the button_driver
 
-**`rst`** - reset
+**`rst`** - reset (button `BTNC`)
 
 **`sig_clk_100mhz`** - regular clock with a frequency of 100MHz
 
@@ -151,15 +151,30 @@ The last block is a signal sender. Once switch `SW1` is activated, this block se
 
 **`output`** - output 21-bit signal going to the input of the mux_21bit_2to1 (input a)
 
-**`rst`** - reset
+**`rst`** - reset (button `BTNC`)
 
-**`sig_clk_100mhz`** - regular clock with a frequency of 100MHz
+**`sig_clk_100mhz`** - reduced clock
 
-**`SW`** - switch `SW0` with which we select the receiver or sender (`SW0` in the down position)
+**`SW`** - switch `SW0` with which we select the receiver (`SW0` in the down position)
 
 **button_driver:**
 
 ![https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/button_driver.png](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/button_driver.png)
+
+**`input`** - the signal that comes from debouncer
+
+**`led17_b`**, **`led17_g`** and **`led17_r`** - indication of the time frame for the introduction of combinations and indication of the sending process
+
+**`output`** - output 21-bit signal going to the input of the mux_21bit_2to1 (input b)
+
+**`rst`** - reset (button `BTNC`)
+
+**`send`** - sending a signal that is controlled by a button `BTNL`
+
+**`sig_clk_100mhz`** - reduced clock
+
+**`SW`** - switch `SW0` with which we select the sender (`SW0` in the up position)
+
 
 
 
