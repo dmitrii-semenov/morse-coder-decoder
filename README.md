@@ -151,7 +151,8 @@ The last block is a signal sender. Once switch `SW1` is activated, this block se
 
 **`input`** - the signal that comes from debouncer
 
-**`led17_b`**, **`led17_g`** and **`led17_r`** - indication of the time frame for the introduction of combinations and indication of the sending process
+**`led17_b`**, **`led17_g`** and **`led17_r`** - indication of the time frame for the introduction of combinations and indication and mode indication
+ 
 
 **`output`** - output 21-bit signal going to the input of the mux_21bit_2to1 (input b)
 
@@ -204,6 +205,22 @@ The last block is a signal sender. Once switch `SW1` is activated, this block se
 **signal_sender:**
 
 ![https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/signal_sender.png](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/signal_sender.png)
+
+**`from data1 to data8 `** - these are all the combinations entered at the beginning by the user that came from mux_driver and that need to be sent
+
+**`led16_b`**, **`led16_g`** and **`led16_r`** - sending progress indication
+
+**`input`** - output signal that comes to the pin `E16`
+
+**`rst`** - reset (button `BTNC`)
+
+**`send`** - sending which is carried out using a switch `SW1`
+
+**`sig_clk_100mhz`** - reduced clock
+
+
+
+
 
 
 
