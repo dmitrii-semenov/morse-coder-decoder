@@ -175,7 +175,9 @@ The last block is a signal sender. Once switch `SW1` is activated, this block se
 
 **`slc`** - signal, which controls which of the input signals is transferred to the output
 
+**mux_driver:**
 
+![https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/mux_driver.png](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/mux_driver.png)
 
 
 
