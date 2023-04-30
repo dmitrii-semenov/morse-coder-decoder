@@ -187,6 +187,12 @@ The last block is a signal sender. Once switch `SW1` is activated, this block se
 
 **`sig_clk_100mhz`** - regular clock with a frequency of 100MHz
 
+**driver_7seg_8dig:**
+
+![https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/driver_7seg_8digits.png](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/driver_7seg_8digits.png)
+
+
+
 
 
 ## Instructions
