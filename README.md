@@ -181,7 +181,11 @@ The last block is a signal sender. Once switch `SW1` is activated, this block se
 
 **`input`** - input signal with original combination from mux_21bit_2to1
 
-**`output1-output8`** - 
+**` from output1 to output8`** - these are all combinations entered by the user for displaying on displays and for further sending
+
+**`rst`** - reset (button `BTNC`)
+
+**`sig_clk_100mhz`** - regular clock with a frequency of 100MHz
 
 
 
