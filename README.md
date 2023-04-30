@@ -113,9 +113,7 @@ The last block is a signal sender. Once switch `SW1` is activated, this block se
 
 ![https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/clock_divider.png](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/clock_divider.png)
 
-
-
-![https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/clock_divider.png](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/clock_divider.png)
+sig_ce - outgoing signal from clock_divider
 
 ## Instructions
 
