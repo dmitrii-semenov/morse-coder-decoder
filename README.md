@@ -113,47 +113,47 @@ The last block is a signal sender. Once switch `SW1` is activated, this block se
 
 ![https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/clock_divider.png](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/clock_divider.png)
 
-`sig_ce` - outgoing signal from clock_divider
+**`sig_ce`** - outgoing signal from clock_divider
 
-`sig_clk_100mhz` - regular clock with a frequency of 100MHz
+**`sig_clk_100mhz`** - regular clock with a frequency of 100MHz
 
-`sig_rst` - reset
+**`sig_rst`** - reset
 
 **mux_21bit_2to1:**
 
 ![https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/mux_21bit_2to1.png](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/mux_21bit_2to1.png)
 
-`s_a` - signal coming from shifter
+**`s_a`** - signal coming from shifter
 
-`s_b` - signal coming from button_driver
+**`s_b`** - signal coming from button_driver
 
-`s_f` - output signal going to mux_driver
+**`s_f`** - output signal going to mux_driver
 
-`slc` - signal, which controls which of the input signals is transferred to the output
+**`slc`** - signal, which controls which of the input signals is transferred to the output
 
 **debouncer:**
 
 ![https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/debouncer.png](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/debouncer.png)
 
-`input` - the signal that is set by the `BTND` button
+**`input`** - the signal that is set by the `BTND` button
 
-`output` - the signal that goes to the input of the button_driver
+**`output`** - the signal that goes to the input of the button_driver
 
-`rst` - reset
+**`rst`** - reset
 
-`sig_clk_100mhz` - regular clock with a frequency of 100MHz
+**`sig_clk_100mhz`** - regular clock with a frequency of 100MHz
 
 **shifter:**
 
 ![https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/shifter.png](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/shifter.png)
 
-`input` - input signal from pin `D14`
+**`input`** - input signal from pin `D14`
 
-`output` - output 21-bit signal going to the input of the mux_21bit_2to1 (input a)
+**`output`** - output 21-bit signal going to the input of the mux_21bit_2to1 (input a)
 
-`rst` - reset
+**`rst`** - reset
 
-`sig_clk_100mhz` - regular clock with a frequency of 100MHz
+**`sig_clk_100mhz`** - regular clock with a frequency of 100MHz
 
 **`SW`** - switch `SW0` with which we select the receiver or sender (`SW0` in the down position)
 
