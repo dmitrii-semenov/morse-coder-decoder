@@ -218,6 +218,10 @@ The last block is a signal sender. Once switch `SW1` is activated, this block se
 
 **`sig_clk_100mhz`** - reduced clock
 
+**top:**
+
+![https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/top.png](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/top.png)
+
 
 
 
