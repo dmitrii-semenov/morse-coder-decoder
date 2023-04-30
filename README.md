@@ -155,7 +155,7 @@ The last block is a signal sender. Once switch `SW1` is activated, this block se
 
 `sig_clk_100mhz` - regular clock with a frequency of 100MHz
 
-`SW` - switch `SW0` with which we select the receiver or sender (`SW0` in the down position)
+**`SW`** - switch `SW0` with which we select the receiver or sender (`SW0` in the down position)
 
 **button_driver:**
 
