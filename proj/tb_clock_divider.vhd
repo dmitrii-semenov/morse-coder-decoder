@@ -1,15 +1,3 @@
-----------------------------------------------------------
---
--- Testbench for clock enable circuit.
--- Nexys A7-50T, xc7a50ticsg324-1L
--- TerosHDL, Vivado v2020.2, EDA Playground
---
--- Copyright (c) 2020 Tomas Fryza
--- Dept. of Radio Electronics, Brno Univ. of Technology, Czechia
--- This work is licensed under the terms of the MIT license.
---
-----------------------------------------------------------
-
 library ieee;
   use ieee.std_logic_1164.all;
 

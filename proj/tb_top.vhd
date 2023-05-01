@@ -36,6 +36,7 @@ architecture testbench of tb_top is
   signal led17_r   : std_logic;
   signal led17_g   : std_logic;
   signal led17_b   : std_logic;
+  signal led_sig   : std_logic;
 
 begin
 
@@ -58,7 +59,8 @@ begin
       led16_b   => led16_b,
       led17_r   => led17_r,
       led17_g   => led17_g,
-      led17_b   => led17_b
+      led17_b   => led17_b,
+      led_sig   => led_sig
     );
 
   --------------------------------------------------------
