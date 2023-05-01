@@ -1,22 +1,3 @@
-----------------------------------------------------------------------------------
--- Company:
--- Engineer:
---
--- Create Date: 28.02.2023 13:19:23
--- Module Name: hex_7seg - Behavioral
--- Project Name:
--- Target Devices:
--- Tool Versions:
--- Description:
---
--- Dependencies:
---
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
---
-----------------------------------------------------------------------------------
-
 library ieee;
   use ieee.std_logic_1164.all;
 

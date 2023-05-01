@@ -1,17 +1,3 @@
-----------------------------------------------------------
---
---! @title Driver for 4-digit 7-segment display
---! @author Tomas Fryza
---! Dept. of Radio Electronics, Brno Univ. of Technology, Czechia
---!
---! @copyright (c) 2020 Tomas Fryza
---! This work is licensed under the terms of the MIT license
---
--- Hardware: Nexys A7-50T, xc7a50ticsg324-1L
--- Software: TerosHDL, Vivado 2020.2, EDA Playground
---
-----------------------------------------------------------
-
 library ieee;
   use ieee.std_logic_1164.all;
   use ieee.numeric_std.all;
