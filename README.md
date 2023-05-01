@@ -126,9 +126,9 @@ The last block is a signal sender. Once switch `SW1` is activated, this block se
 
 ![https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/debouncer.png](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/debouncer.png)
 
-**`input`** - the signal that is set by the `BTND` button
+**`input`** - input signal (code) that is set by the `BTND` button
 
-**`output`** - the signal that goes to the input of the button_driver
+**`output`** - the signal connected to the input of the button_driver
 
 **`rst`** - reset (button `BTNC`)
 
@@ -141,54 +141,54 @@ The last block is a signal sender. Once switch `SW1` is activated, this block se
 
 **`input`** - input signal from pin `D14`
 
-**`output`** - output 21-bit signal going to the input of the mux_21bit_2to1 (input a)
+**`output`** - output 21-bit signal connected to the mux_21bit_2to1 (input a)
 
 **`rst`** - reset (button `BTNC`)
 
 **`sig_clk_100mhz`** - reduced clock
 
-**`sw`** - switch `SW0` with which we select the receiver (`SW0` in the down position)
+**`sw`** - switch `SW0` in the receiver mode (`SW0` in the down position)
 
 
 **button_driver:**
 
 ![https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/button_driver.png](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/button_driver.png)
 
-**`input`** - the signal that comes from debouncer
+**`input`** - the signal from the debouncer
 
-**`led17_b`**, **`led17_g`** and **`led17_r`** - indication of the time frame for the introduction of combinations and mode indication
+**`led17_b`**, **`led17_g`** and **`led17_r`** - indication of the time frame for dots and dashes combination
 
-**`output`** - output 21-bit signal going to the input of the mux_21bit_2to1 (input b)
+**`output`** - output 21-bit signal connected to the input of the mux_21bit_2to1 (input b)
 
 **`rst`** - reset (button `BTNC`)
 
-**`send`** - sending a signal that is controlled by a button `BTNL`
+**`send`** - a button `BTNL` thatr send the signal to the next block
 
 **`sig_clk_100mhz`** - reduced clock
 
-**`sw`** - switch `SW0` with which we select the sender (`SW0` in the up position)
+**`sw`** - switch `SW0` in the sender mode (`SW0` in the up position)
 
 
 **mux_21bit_2to1:**
 
 ![https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/mux_21bit_2to1.png](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/mux_21bit_2to1.png)
 
-**`s_a`** - signal coming from shifter
+**`s_a`** - signal from shifter output
 
-**`s_b`** - signal coming from button_driver
+**`s_b`** - signal from button_driver output
 
-**`s_f`** - output signal going to mux_driver
+**`s_f`** - output signal connected to the mux_driver
 
-**`slc`** - signal, which controls which of the input signals is transferred to the output
+**`slc`** - control signal (connects input a or b with the output)
 
 
 **mux_driver:**
 
 ![https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/mux_driver.png](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/mux_driver.png)
 
-**`input`** - input signal with original combination from mux_21bit_2to1
+**`input`** - input signal from mux_21bit_2to1
 
-**`from output1 to output8`** - these are all combinations entered by the user for displaying on displays and for further sending
+**`output1` to `output8`** - these are the last 8 symbols entered by a user
 
 **`rst`** - reset (button `BTNC`)
 
@@ -201,20 +201,20 @@ The last block is a signal sender. Once switch `SW1` is activated, this block se
 
 **`sig_clk_100mhz`** - regular clock with a frequency of 100MHz
 
-**`from sig_data1 to sig_data8 `** - these are all the combinations entered at the beginning by the user that came from the mux_driver and which need to be displayed on the 7-segment displays
+**`sig_data1` to `sig_data8 `** - these are the last 8 symbols entered by a user (will be displayed)
 
-**`sig_dig`** - 8-bit signal that tells which of the 8 positions entered symbol will be
+**`sig_dig`** - 8-bit signal that sequentially activated anodes of displays
 
 **`sig_rst`** - reset (button `BTNC`)
 
-**`sig_seg`** - a 7-bit signal that tells which segments should be lit for a particular combination
+**`sig_seg`** - a 7-bit signal that activates segments for a particular symbol
 
 
 **signal_sender:**
 
 ![https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/signal_sender.png](https://github.com/dmitrii-semenov/morse-coder-decoder/blob/main/img/signal_sender.png)
 
-**`from data1 to data8 `** - these are all the combinations entered at the beginning by the user that came from mux_driver and that need to be sent
+**`data1` to `data8 `** - these are the last 8 symbols entered by a user
 
 **`led16_b`**, **`led16_g`** and **`led16_r`** - sending progress indication
 
@@ -222,7 +222,7 @@ The last block is a signal sender. Once switch `SW1` is activated, this block se
 
 **`rst`** - reset (button `BTNC`)
 
-**`send`** - sending which is carried out using a switch `SW1`
+**`send`** - switch `SW1` that activates sending process
 
 **`sig_clk_100mhz`** - reduced clock
 
@@ -234,23 +234,29 @@ The last block is a signal sender. Once switch `SW1` is activated, this block se
 
 **`btnc`** - reset (button `BTNC`)
 
-**`btnd`** - a button with which the user sets a combination of dots and dashes
+**`btnd`** - a button to set a combination of dots and dashes
 
-**`btnl`** - a button with which the user sends a combination for display on displays
+**`btnl`** - a button to send a combination for a particular symbol
 
 **`sig_clk_100mhz`** - regular clock with a frequency of 100MHz
 
+**`d14`** - pin for the input signal in "receiver" mode
+
+**`dig`** - 8-bit signal that sequentially activated anodes of displays
+
+**`e16`** - pin for the output signal in "sender" mode
+
 **`led16_b`**, **`led16_g`** and **`led16_r`** - sending progress indication
 
-**`led17_b`**, **`led17_g`** and **`led17_r`** - indication of the time frame for the introduction of combinations and mode indication
+**`led17_b`**, **`led17_g`** and **`led17_r`** - indication of the time frame suring dots and dashes typing
 
-**`led_sig`** - 
+**`led_sig`** - led indication for an output signal in "sender" mode
 
-**`seg`** - a 7-bit signal that tells which segments should be lit for a particular combination
+**`seg`** - a 7-bit signal that activates segments for a particular symbol
 
-**`sw`** - switch `SW0` with which we select the sender or the receiver
+**`sw`** - switch `SW0` to select the mode betweem "sender" and "receiver"
 
-**`sw1`** - switch `SW1` with which the sending is carried out
+**`sw1`** - switch `SW1` to send typed signal to the output `E16`
 
 ## Instructions
 
