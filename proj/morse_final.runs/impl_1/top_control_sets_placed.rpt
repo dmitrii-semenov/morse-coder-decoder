@@ -1,0 +1,102 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Wed May  3 14:50:42 2023
+| Host         : PC-638 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a50ti
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    24 |
+|    Minimum number of control sets                        |    24 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    72 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    24 |
+| >= 0 to < 4        |     6 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    16 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              35 |           19 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             203 |           53 |
+| Yes          | No                    | No                     |              26 |            8 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             352 |          102 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------+---------------------------------+----------------------------------------+------------------+----------------+--------------+
+|     Clock Signal     |          Enable Signal          |            Set/Reset Signal            | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------------+---------------------------------+----------------------------------------+------------------+----------------+--------------+
+|  clk_ce_BUFG         | sender/led16_r_i_2_n_0          | sender/led16_r_i_1_n_0                 |                1 |              1 |         1.00 |
+|  clk_ce_BUFG         | sender/led16_g_i_1_n_0          | btnc_IBUF                              |                1 |              1 |         1.00 |
+|  clk_ce_BUFG         | deb/one_cnt                     | butt_driver/led17_g_i_1_n_0            |                1 |              1 |         1.00 |
+|  clk_ce_BUFG         | butt_driver/led17_b_i_2_n_0     | deb/led17_b2_out                       |                1 |              1 |         1.00 |
+|  clk_ce_BUFG         | butt_driver/led17_r_i_2_n_0     | butt_driver/led17_r8_out               |                1 |              1 |         1.00 |
+|  clk_ce_BUFG         | sender/output_i_2_n_0           | sender/output_i_1__0_n_0               |                1 |              2 |         2.00 |
+|  clk_ce_BUFG         | sender/index                    |                                        |                4 |              5 |         1.25 |
+|  clk_ce_BUFG         |                                 |                                        |                8 |             13 |         1.62 |
+|  clk_ce_BUFG         | butt_driver/sig_out[20]_i_2_n_0 | butt_driver/sig_out[20]_i_1_n_0        |                3 |             19 |         6.33 |
+|  clk_ce_BUFG         | shift/sig_cnt[31]_i_2_n_0       | shift/p_0_in[20]                       |                4 |             20 |         5.00 |
+|  clk100mhz_IBUF_BUFG | mux_driv/sig_control_0          |                                        |                4 |             21 |         5.25 |
+|  clk_ce_BUFG         | shift/output[20]_i_2_n_0        | shift/output[20]_i_1_n_0               |                4 |             21 |         5.25 |
+|  clk_ce_BUFG         | butt_driver/sig_out1            | butt_driver/output[20]_i_1__0_n_0      |                3 |             21 |         7.00 |
+|  clk100mhz_IBUF_BUFG |                                 |                                        |               11 |             22 |         2.00 |
+|  clk100mhz_IBUF_BUFG |                                 | seg_driv/clk_en0/sig_cnt[0]_i_1__0_n_0 |                8 |             31 |         3.88 |
+|  clk100mhz_IBUF_BUFG |                                 | deb/one_cnt[0]_i_1_n_0                 |                8 |             32 |         4.00 |
+|  clk100mhz_IBUF_BUFG |                                 | deb/zero_cnt[0]_i_1_n_0                |                8 |             32 |         4.00 |
+|  clk_ce_BUFG         |                                 | shift/zero_cnt[0]_i_1__0_n_0           |                8 |             32 |         4.00 |
+|  clk_ce_BUFG         |                                 | deb/send_cnt                           |                8 |             32 |         4.00 |
+|  clk_ce_BUFG         | shift/sig_cnt[31]_i_2_n_0       | shift/sig_cnt[31]_i_1_n_0              |                8 |             32 |         4.00 |
+|  clk_ce_BUFG         | deb/deb_out                     | deb/output_reg_0                       |                8 |             32 |         4.00 |
+|  clk_ce_BUFG         | butt_driver/sig_out1            | deb/send_cnt                           |                8 |             32 |         4.00 |
+|  clk100mhz_IBUF_BUFG |                                 | btnc_IBUF                              |               13 |             44 |         3.38 |
+|  clk100mhz_IBUF_BUFG | mux_driv/output10_carry__0_n_1  | btnc_IBUF                              |               58 |            168 |         2.90 |
++----------------------+---------------------------------+----------------------------------------+------------------+----------------+--------------+
+
+

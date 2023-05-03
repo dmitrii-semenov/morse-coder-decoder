@@ -2,37 +2,29 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Wed Apr 26 14:26:23 2023
-# Process ID: 2704
-# Current directory: C:/Users/240654/Documents/h/morse-coder-decoder/proj
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13468 C:\Users\240654\Documents\h\morse-coder-decoder\proj\morse_final.xpr
-# Log file: C:/Users/240654/Documents/h/morse-coder-decoder/proj/vivado.log
-# Journal file: C:/Users/240654/Documents/h/morse-coder-decoder/proj\vivado.jou
+# Start of session at: Wed May  3 14:48:25 2023
+# Process ID: 11996
+# Current directory: C:/Users/240654/Documents/morse-coder-decoder/proj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7792 C:\Users\240654\Documents\morse-coder-decoder\proj\morse_final.xpr
+# Log file: C:/Users/240654/Documents/morse-coder-decoder/proj/vivado.log
+# Journal file: C:/Users/240654/Documents/morse-coder-decoder/proj\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/240654/Documents/h/morse-coder-decoder/proj/morse_final.xpr
-INFO: [Project 1-313] Project file moved from 'C:/Users/240654/Documents/morse-coder-decoder/morse_final' since last save.
-WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'C:/Users/240654/Documents/h/morse-coder-decoder/proj/morse_final.gen/sources_1', nor could it be found using path 'C:/Users/240654/Documents/morse-coder-decoder/morse_final/morse_final.gen/sources_1'.
-INFO: [filemgmt 56-1] IPUserFilesDir: Directory not found as 'C:/Users/240654/Documents/h/morse-coder-decoder/proj/morse_final.ip_user_files'; using path 'C:/Users/240654/Documents/morse-coder-decoder/morse_final/morse_final.ip_user_files' instead.
+open_project C:/Users/240654/Documents/morse-coder-decoder/proj/morse_final.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/240654/Documents/h/morse-coder-decoder/proj' since last save.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'C:/Users/240654/Documents/morse-coder-decoder/proj/morse_final.gen/sources_1', nor could it be found using path 'C:/Users/240654/Documents/h/morse-coder-decoder/proj/morse_final.gen/sources_1'.
+INFO: [filemgmt 56-1] IPUserFilesDir: Directory not found as 'C:/Users/240654/morse-coder-decoder/morse_final/morse_final.ip_user_files'; using path 'C:/Users/240654/Documents/morse-coder-decoder/morse_final/morse_final.ip_user_files' instead.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/appz/Xilinx/Vivado/2020.2/data/ip'.
-open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 1001.387 ; gain = 0.000
 update_compile_order -fileset sources_1
-reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 4
-[Wed Apr 26 14:27:29 2023] Launched synth_1...
-Run output will be captured here: C:/Users/240654/Documents/h/morse-coder-decoder/proj/morse_final.runs/synth_1/runme.log
-[Wed Apr 26 14:27:29 2023] Launched impl_1...
-Run output will be captured here: C:/Users/240654/Documents/h/morse-coder-decoder/proj/morse_final.runs/impl_1/runme.log
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-[Wed Apr 26 14:31:57 2023] Launched synth_1...
-Run output will be captured here: C:/Users/240654/Documents/h/morse-coder-decoder/proj/morse_final.runs/synth_1/runme.log
-[Wed Apr 26 14:31:57 2023] Launched impl_1...
-Run output will be captured here: C:/Users/240654/Documents/h/morse-coder-decoder/proj/morse_final.runs/impl_1/runme.log
+[Wed May  3 14:49:11 2023] Launched synth_1...
+Run output will be captured here: C:/Users/240654/Documents/morse-coder-decoder/proj/morse_final.runs/synth_1/runme.log
+[Wed May  3 14:49:11 2023] Launched impl_1...
+Run output will be captured here: C:/Users/240654/Documents/morse-coder-decoder/proj/morse_final.runs/impl_1/runme.log
 open_hw_manager
 connect_hw_server -allow_non_jtag
 INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
@@ -56,52 +48,21 @@ INFO: [Labtools 27-2221] Launch Output:
 
 
 
-connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1001.387 ; gain = 0.000
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 998.738 ; gain = 0.000
 open_hw_target
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292AD2E09A
-open_hw_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2343.172 ; gain = 1341.785
-set_property PROGRAM.FILE {C:/Users/240654/Documents/h/morse-coder-decoder/proj/morse_final.runs/impl_1/top.bit} [get_hw_devices xc7a50t_0]
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292AD2DE4A
+open_hw_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2333.820 ; gain = 1335.082
+set_property PROGRAM.FILE {C:/Users/240654/Documents/morse-coder-decoder/proj/morse_final.runs/impl_1/top.bit} [get_hw_devices xc7a50t_0]
 current_hw_device [get_hw_devices xc7a50t_0]
 refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a50t_0] 0]
 INFO: [Labtools 27-1434] Device xc7a50t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
 set_property PROBES.FILE {} [get_hw_devices xc7a50t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a50t_0]
-set_property PROGRAM.FILE {C:/Users/240654/Documents/h/morse-coder-decoder/proj/morse_final.runs/impl_1/top.bit} [get_hw_devices xc7a50t_0]
+set_property PROGRAM.FILE {C:/Users/240654/Documents/morse-coder-decoder/proj/morse_final.runs/impl_1/top.bit} [get_hw_devices xc7a50t_0]
 program_hw_devices [get_hw_devices xc7a50t_0]
 INFO: [Labtools 27-3164] End of startup status: HIGH
 refresh_hw_device [lindex [get_hw_devices xc7a50t_0] 0]
 INFO: [Labtools 27-1434] Device xc7a50t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-[Wed Apr 26 14:55:37 2023] Launched synth_1...
-Run output will be captured here: C:/Users/240654/Documents/h/morse-coder-decoder/proj/morse_final.runs/synth_1/runme.log
-[Wed Apr 26 14:55:37 2023] Launched impl_1...
-Run output will be captured here: C:/Users/240654/Documents/h/morse-coder-decoder/proj/morse_final.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a50t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a50t_0]
-set_property PROGRAM.FILE {C:/Users/240654/Documents/h/morse-coder-decoder/proj/morse_final.runs/impl_1/top.bit} [get_hw_devices xc7a50t_0]
-program_hw_devices [get_hw_devices xc7a50t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a50t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a50t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-[Wed Apr 26 15:06:53 2023] Launched synth_1...
-Run output will be captured here: C:/Users/240654/Documents/h/morse-coder-decoder/proj/morse_final.runs/synth_1/runme.log
-[Wed Apr 26 15:06:53 2023] Launched impl_1...
-Run output will be captured here: C:/Users/240654/Documents/h/morse-coder-decoder/proj/morse_final.runs/impl_1/runme.log
-reset_run synth_1
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/240654/Documents/h/morse-coder-decoder/proj/morse_final.runs/synth_1
-
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-[Wed Apr 26 15:26:35 2023] Launched synth_1...
-Run output will be captured here: C:/Users/240654/Documents/h/morse-coder-decoder/proj/morse_final.runs/synth_1/runme.log
-[Wed Apr 26 15:26:35 2023] Launched impl_1...
-Run output will be captured here: C:/Users/240654/Documents/h/morse-coder-decoder/proj/morse_final.runs/impl_1/runme.log
-reset_run synth_1
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/240654/Documents/h/morse-coder-decoder/proj/morse_final.runs/synth_1
-
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292AD2DE4A
 exit
-INFO: [Common 17-206] Exiting Vivado at Wed Apr 26 15:29:18 2023...
+INFO: [Common 17-206] Exiting Vivado at Wed May  3 15:06:06 2023...
